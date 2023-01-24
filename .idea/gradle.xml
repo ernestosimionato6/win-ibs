@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleHome" value="$USER_HOME$/.sdkman/candidates/gradle/current" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/module" />
+            <option value="$PROJECT_DIR$/module/client" />
+            <option value="$PROJECT_DIR$/module/client/sucredito-ibsclient-api" />
+            <option value="$PROJECT_DIR$/module/client/sucredito-ibsclient-impl" />
+            <option value="$PROJECT_DIR$/module/client/sucredito-ibsclient-shell" />
+            <option value="$PROJECT_DIR$/module/ibs" />
+            <option value="$PROJECT_DIR$/module/ibs/entidad" />
+            <option value="$PROJECT_DIR$/module/ibs/entidad/sucreditoibs-entidad-api" />
+            <option value="$PROJECT_DIR$/module/ibs/entidad/sucreditoibs-entidad-impl" />
+            <option value="$PROJECT_DIR$/module/ibs/entidad/sucreditoibs-transfer-api" />
+            <option value="$PROJECT_DIR$/module/ibs/entidad/sucreditoibs-transfer-impl" />
+            <option value="$PROJECT_DIR$/module/sdn" />
+            <option value="$PROJECT_DIR$/module/sdn/commons" />
+            <option value="$PROJECT_DIR$/module/sdn/commons/sdncommons-jdbc" />
+            <option value="$PROJECT_DIR$/module/sdn/commons/sdncommons-text" />
+            <option value="$PROJECT_DIR$/module/sdn/data" />
+            <option value="$PROJECT_DIR$/module/sdn/data/ibs" />
+            <option value="$PROJECT_DIR$/module/sdn/data/ibs/sdndata-ibsconn" />
+            <option value="$PROJECT_DIR$/module/sdn/data/ibs/sdndata-ibsjdbc" />
+            <option value="$PROJECT_DIR$/module/sdn/data/ibs/sdndata-ibspool" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>
