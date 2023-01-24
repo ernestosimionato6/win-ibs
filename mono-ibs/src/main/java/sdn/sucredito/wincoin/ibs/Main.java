@@ -1,4 +1,4 @@
-package sdn.sucredito.wincoin.ibs.windcoin.client;
+package sdn.sucredito.wincoin.ibs;
 
 public class Main {
     public static void main(String[] args) {
