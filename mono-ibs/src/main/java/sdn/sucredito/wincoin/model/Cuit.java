@@ -11,6 +11,8 @@ public class Cuit {
 
     String numero;
 
+    public String value() { return numero; }
+
     public static Cuit of(String numero) {
         return new Cuit(numero);
     }

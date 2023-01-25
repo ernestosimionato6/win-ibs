@@ -13,8 +13,8 @@ public class IBSBasicConnectionPool implements IBSConnectionPool {
     private final String password;
     private final List<Connection> connectionPool;
     private final List<Connection> usedConnections = new ArrayList<>();
-    private static final int INITIAL_POOL_SIZE = 10;
-    private static final int MAX_POOL_SIZE = 20;
+    private static final int INITIAL_POOL_SIZE = 2; // 5; // 10; //
+    private static final int MAX_POOL_SIZE = 10; // 20;
     private static final int MAX_TIMEOUT = 5;
 
     public static IBSBasicConnectionPool create(String url, String user, String password) throws SQLException {
@@ -23,6 +23,14 @@ public class IBSBasicConnectionPool implements IBSConnectionPool {
             pool.add(createConnection(url, user, password));
         }
         return new IBSBasicConnectionPool(url, user, password, pool);
+    }
+
+
+    public IBSBasicConnectionPool(String url, String user, String password) {
+        this.url = url;
+        this.user = user;
+        this.password = password;
+        this.connectionPool = new ArrayList<>();
     }
 
     private IBSBasicConnectionPool(String url, String user, String password, List<Connection> connectionPool) {
@@ -34,7 +42,9 @@ public class IBSBasicConnectionPool implements IBSConnectionPool {
 
     @Override
     public IBSConnection getIBSConnection() throws SQLException {
-        return new SimpleIBSConnection();
+        return new SimpleIBSConnection(
+                getConnection()
+        );
     }
 
     @Override

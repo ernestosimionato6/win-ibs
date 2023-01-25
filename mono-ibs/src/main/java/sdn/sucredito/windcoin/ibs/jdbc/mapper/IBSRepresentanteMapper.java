@@ -16,6 +16,12 @@ import java.util.Map;
 import static sdn.sucredito.windcoin.ibs.jdbc.procedures.cuentas.impl.IBSConstants.*;
 
 public class IBSRepresentanteMapper {
+
+    public static IBSRepresentanteMapper instance;
+    static {
+        instance = new IBSRepresentanteMapper();
+    }
+
     public IBSRepresentante map(Map<String, Object> rs) {
         return IBSRepresentante.builder()
            .actividad(rs.get(ACTIVIDAD).toString())

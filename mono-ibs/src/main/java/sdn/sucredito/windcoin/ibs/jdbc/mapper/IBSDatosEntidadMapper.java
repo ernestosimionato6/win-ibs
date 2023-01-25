@@ -16,6 +16,11 @@ import static sdn.sucredito.windcoin.ibs.jdbc.procedures.cuentas.impl.IBSConstan
 
 public class IBSDatosEntidadMapper {
 
+    public static IBSDatosEntidadMapper instance;
+    static {
+        instance = new IBSDatosEntidadMapper();
+    }
+
     public IBSDatosEntidad map(LinkedCaseInsensitiveMap rs) {
        return IBSDatosEntidad.builder()
                .actividad(rs.get(ACTIVIDAD).toString())

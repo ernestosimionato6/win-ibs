@@ -14,6 +14,11 @@ import java.util.Map;
 import static sdn.sucredito.windcoin.ibs.jdbc.procedures.cuentas.impl.IBSConstants.*;
 
 public class IBSCuentaMapper {
+    public static IBSCuentaMapper instance;
+    static {
+        instance = new IBSCuentaMapper();
+    }
+
     public IBSCuenta map(Map<String, Object> rs) {
 
         return IBSCuenta.builder()

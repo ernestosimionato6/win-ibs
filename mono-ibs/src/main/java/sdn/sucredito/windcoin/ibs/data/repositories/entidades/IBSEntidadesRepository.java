@@ -9,8 +9,13 @@ import java.util.Optional;
 
 public interface IBSEntidadesRepository {
 
-    Optional<DatosEntidad> obtenerDatosEntidadByCuit(Cuit cuitEntidad);
+    Optional<DatosEntidad> obtenerDatosEntidadByCuit(Cuit cuitEntidad) throws Exception;
 
-    List<Representante> obtenerRepresentantesByCuitEntidadYTipo(Cuit cuitEntidad, Boolean incluirEntidadesFinancieras);
+    List<Representante> obtenerApoderadosByCuitEntidad(
+            Cuit cuitEntidad
+    ) throws Exception;
 
+    List<Representante> obtenerRepresentantesByCuitEntidad(
+            Cuit cuitEntidad
+    ) throws Exception;
 }

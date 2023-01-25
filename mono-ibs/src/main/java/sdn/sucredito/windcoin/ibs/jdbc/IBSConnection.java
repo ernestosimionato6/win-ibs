@@ -4,9 +4,7 @@ import sdn.sucredito.windcoin.ibs.ssg.jdbc.model.SSGUsrCredentials;
 
 import java.sql.Connection;
 
-interface IBSConnection {
-
-    public void checkLoginUsr() throws Exception;
+public interface IBSConnection {
 
     public Boolean isValid(int timeout) throws Exception;
 
@@ -14,5 +12,6 @@ interface IBSConnection {
 
     public Connection getSQLConnection();
 
-    public SSGUsrCredentials getUsrCredentials();
 }
+
+

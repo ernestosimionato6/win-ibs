@@ -7,5 +7,5 @@ import java.util.List;
 
 public interface IBSCuentasRepository {
 
-    List<Cuenta> obtenerCuentasByCuitEntidadYCuitRepresentante(Cuit cuitEntidad, Cuit cuitRepresentante);
+    List<Cuenta> obtenerCuentasByCuitEntidadYCuitRepresentante(Cuit cuitEntidad, Cuit cuitRepresentante) throws Exception;
 }

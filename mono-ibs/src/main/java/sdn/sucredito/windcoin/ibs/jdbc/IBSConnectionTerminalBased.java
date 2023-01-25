@@ -11,7 +11,7 @@ import sdn.sucredito.windcoin.ibs.ssg.jdbc.procedures.SSGCheckLoginUsr;
 @Slf4j
 @Data
 @ToString
-public class IBSConnectionTerminalBased implements IBSConnection {
+public class IBSConnectionTerminalBased implements IBSConnection, IBSConnectionInTerminal {
 
   public Connection sqlConnection;
   public SSGUsrCredentials ibsUsr;
