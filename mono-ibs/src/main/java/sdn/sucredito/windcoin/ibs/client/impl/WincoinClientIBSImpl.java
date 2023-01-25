@@ -12,7 +12,6 @@ import sdn.sucredito.windcoin.ibs.data.repositories.entidades.IBSCuentasReposito
 import sdn.sucredito.windcoin.ibs.data.repositories.entidades.IBSEntidadesRepository;
 import sdn.sucredito.windcoin.ibs.data.repositories.entidades.impl.IBSCuentasRepositoryImpl;
 import sdn.sucredito.windcoin.ibs.data.repositories.entidades.impl.IBSEntidadesRepositoryImpl;
-import sdn.sucredito.windcoin.ibs.jdbc.IBSConnection;
 import sdn.sucredito.windcoin.ibs.jdbc.IBSConnectionPool;
 
 import java.util.List;
