@@ -18,7 +18,7 @@ this.pool = pool;
 @Override 
 public Connection getConnection() throws SQLException {
   System.out.println("ibs_datasource -> getConnection ");
-  IBSConnectionTerminalBased ibsConnection = pool.getIBSConnection();
+  IBSConnection ibsConnection = pool.getIBSConnection();
   System.out.println("[DEBUG]  ibs_connection : " + ibsConnection);
   return ibsConnection.getSQLConnection();
 }
