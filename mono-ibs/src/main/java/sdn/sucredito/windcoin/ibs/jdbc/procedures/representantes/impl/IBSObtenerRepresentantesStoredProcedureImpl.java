@@ -7,7 +7,7 @@ import org.springframework.util.LinkedCaseInsensitiveMap;
 import sdn.lang.text.text.TextTable;
 import sdn.sucredito.windcoin.ibs.jdbc.IBSJDBCTemplate;
 import sdn.sucredito.windcoin.ibs.jdbc.IBSJDBCUtil;
-import sdn.sucredito.windcoin.ibs.jdbc.mapper.IBSEntidadMapper;
+import sdn.sucredito.windcoin.ibs.jdbc.mapper.IBSRepresentanteMapper;
 import sdn.sucredito.windcoin.ibs.jdbc.model.IBSRepresentante;
 import sdn.sucredito.windcoin.ibs.jdbc.procedures.cuentas.impl.IBSConstants;
 
@@ -23,11 +23,11 @@ import static java.lang.System.out;
 public class IBSObtenerRepresentantesStoredProcedureImpl extends StoredProcedure
     implements IBSObtenerRepresentantestoredProcedure {
 
-    public static IBSEntidadMapper mapper;
+    public static IBSRepresentanteMapper mapper;
 
 
     static {
-        mapper = new IBSEntidadMapper();
+        mapper = new IBSRepresentanteMapper();
     }
 
     private static final String PROCEDURE_NAME = "sdn_windcoin_entidad_representantes";
