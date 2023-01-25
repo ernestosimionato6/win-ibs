@@ -22,6 +22,11 @@ public class IBSConfigurationProperties {
     String username;
     String password;
     String connectionUrl;
+
+    Integer initialPoolSize;
+    Integer maxPoolSize;
+    Integer maxTimeout;
+
 }
 
 

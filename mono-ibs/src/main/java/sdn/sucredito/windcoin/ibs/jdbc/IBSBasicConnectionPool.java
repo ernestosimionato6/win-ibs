@@ -25,9 +25,24 @@ public class IBSBasicConnectionPool implements IBSConnectionPool {
     private final String password;
     private final List<Connection> connectionPool;
     private final List<Connection> usedConnections = new ArrayList<>();
-    private static final int INITIAL_POOL_SIZE = 2; // 5; // 10; //
-    private static final int MAX_POOL_SIZE = 10; // 20;
-    private static final int MAX_TIMEOUT = 5;
+    private static int INITIAL_POOL_SIZE = 2; // 5; // 10; //
+    private static int MAX_POOL_SIZE = 10; // 20;
+    private static int MAX_TIMEOUT = 5;
+
+    public static IBSBasicConnectionPool create(
+            String url,
+            String user,
+            String password,
+            Integer initialPoolSize,
+            Integer maxPoolSize,
+            Integer maxTimeout
+    ) throws SQLException {
+
+        INITIAL_POOL_SIZE = initialPoolSize;
+        MAX_POOL_SIZE = maxPoolSize;
+        MAX_TIMEOUT = maxTimeout;
+        return create(url, user, password);
+    }
 
     public static IBSBasicConnectionPool create(String url, String user, String password) throws SQLException {
         List<Connection> pool = new ArrayList<>(INITIAL_POOL_SIZE);
