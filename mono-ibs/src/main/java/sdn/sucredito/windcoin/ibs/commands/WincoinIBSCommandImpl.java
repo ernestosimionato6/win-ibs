@@ -82,7 +82,7 @@ public class WincoinIBSCommandImpl implements WincoinIBSCommand, Runnable {
                 IBSConnectionPool pool = IBSBasicConnectionPool.create(
                         properties.getConnectionUrl(),
                         properties.getUsername(),
-                        properties.getUsername()
+                        properties.getPassword()
                 );
                 WincoinClientIBS client = new WincoinClientIBSImpl(pool);
                CommandLine cmd = new CommandLine(new WincoinIBSCommandImpl(client));
