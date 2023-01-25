@@ -6,6 +6,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+import static java.lang.System.out;
 
 
 public class IBSBasicConnectionPool implements IBSConnectionPool {
@@ -85,6 +86,7 @@ public class IBSBasicConnectionPool implements IBSConnectionPool {
     }
 
     private static Connection createConnection(String url, String user, String password) throws SQLException {
+        out.println(" [ ibs-connection-pool ] create_connection of " + url + "   " + user + "   " + password);
         return DriverManager.getConnection(url, user, password);
     }
 
