@@ -1,0 +1,95 @@
+2021-03-29 14:11:22,213 DEBUG [main] s.p.i.d.IBSDDSamples  - sampling idd_dd_samples
+2021-03-29 14:11:22,250  INFO [main] s.p.i.c.j.c.s.BasicConnectionPoolSamples  - starting connections...
+2021-03-29 14:11:22,288 DEBUG [main] s.p.i.c.j.c.i.SSGAuthenticatedConnectionPoolImpl  - jdbc::get_connection with 
+	 - url: jdbc:sybase:Tds:172.16.41.23:4112/Banksys?IS_CLOSED_TEST=select 1 
+	 - urs: perezr 
+	 - password: apolo11* 
+	 - ibs_usr: SSGUsrCredentials(entiadcodpar=1057, entidadpasswpar=PSW CENSYS, paiscod=54, bcocod=301, succod=1, tipdoc=88, usrident=2000001, tercod=17680, origpaiscod=54, origbcocod=301, origsuccod=1, concepto=H2H, tipo_print=0)
+2021-03-29 14:11:22,785 DEBUG [main] s.p.i.c.j.c.IBSConnection  - building ibs_connection with SSGUsrCredentials(entiadcodpar=1057, entidadpasswpar=PSW CENSYS, paiscod=54, bcocod=301, succod=1, tipdoc=88, usrident=2000001, tercod=17680, origpaiscod=54, origbcocod=301, origsuccod=1, concepto=H2H, tipo_print=0)
+2021-03-29 14:11:22,797 DEBUG [main] s.p.i.c.j.c.i.SSGAuthenticatedConnectionPoolImpl  - jdbc::get_connection with 
+	 - url: jdbc:sybase:Tds:172.16.41.23:4112/Banksys?IS_CLOSED_TEST=select 1 
+	 - urs: perezr 
+	 - password: apolo11* 
+	 - ibs_usr: SSGUsrCredentials(entiadcodpar=1057, entidadpasswpar=PSW CENSYS, paiscod=54, bcocod=301, succod=1, tipdoc=88, usrident=2000001, tercod=17681, origpaiscod=54, origbcocod=301, origsuccod=1, concepto=H2H, tipo_print=0)
+2021-03-29 14:11:22,834 DEBUG [main] s.p.i.c.j.c.IBSConnection  - building ibs_connection with SSGUsrCredentials(entiadcodpar=1057, entidadpasswpar=PSW CENSYS, paiscod=54, bcocod=301, succod=1, tipdoc=88, usrident=2000001, tercod=17681, origpaiscod=54, origbcocod=301, origsuccod=1, concepto=H2H, tipo_print=0)
+2021-03-29 14:11:22,836 DEBUG [main] s.p.i.c.j.c.i.SSGAuthenticatedConnectionPoolImpl  - jdbc::get_connection with 
+	 - url: jdbc:sybase:Tds:172.16.41.23:4112/Banksys?IS_CLOSED_TEST=select 1 
+	 - urs: perezr 
+	 - password: apolo11* 
+	 - ibs_usr: SSGUsrCredentials(entiadcodpar=1057, entidadpasswpar=PSW CENSYS, paiscod=54, bcocod=301, succod=1, tipdoc=88, usrident=2000001, tercod=17682, origpaiscod=54, origbcocod=301, origsuccod=1, concepto=H2H, tipo_print=0)
+2021-03-29 14:11:23,094 DEBUG [main] s.p.i.c.j.c.IBSConnection  - building ibs_connection with SSGUsrCredentials(entiadcodpar=1057, entidadpasswpar=PSW CENSYS, paiscod=54, bcocod=301, succod=1, tipdoc=88, usrident=2000001, tercod=17682, origpaiscod=54, origbcocod=301, origsuccod=1, concepto=H2H, tipo_print=0)
+2021-03-29 14:11:23,096 DEBUG [main] s.p.i.c.j.c.i.SSGAuthenticatedConnectionPoolImpl  - jdbc::get_connection with 
+	 - url: jdbc:sybase:Tds:172.16.41.23:4112/Banksys?IS_CLOSED_TEST=select 1 
+	 - urs: perezr 
+	 - password: apolo11* 
+	 - ibs_usr: SSGUsrCredentials(entiadcodpar=1057, entidadpasswpar=PSW CENSYS, paiscod=54, bcocod=301, succod=1, tipdoc=88, usrident=2000001, tercod=17683, origpaiscod=54, origbcocod=301, origsuccod=1, concepto=H2H, tipo_print=0)
+2021-03-29 14:11:23,205 DEBUG [main] s.p.i.c.j.c.IBSConnection  - building ibs_connection with SSGUsrCredentials(entiadcodpar=1057, entidadpasswpar=PSW CENSYS, paiscod=54, bcocod=301, succod=1, tipdoc=88, usrident=2000001, tercod=17683, origpaiscod=54, origbcocod=301, origsuccod=1, concepto=H2H, tipo_print=0)
+2021-03-29 14:11:23,207 DEBUG [main] s.p.i.c.j.c.i.SSGAuthenticatedConnectionPoolImpl  - jdbc::get_connection with 
+	 - url: jdbc:sybase:Tds:172.16.41.23:4112/Banksys?IS_CLOSED_TEST=select 1 
+	 - urs: perezr 
+	 - password: apolo11* 
+	 - ibs_usr: SSGUsrCredentials(entiadcodpar=1057, entidadpasswpar=PSW CENSYS, paiscod=54, bcocod=301, succod=1, tipdoc=88, usrident=2000001, tercod=17684, origpaiscod=54, origbcocod=301, origsuccod=1, concepto=H2H, tipo_print=0)
+2021-03-29 14:11:23,242 DEBUG [main] s.p.i.c.j.c.IBSConnection  - building ibs_connection with SSGUsrCredentials(entiadcodpar=1057, entidadpasswpar=PSW CENSYS, paiscod=54, bcocod=301, succod=1, tipdoc=88, usrident=2000001, tercod=17684, origpaiscod=54, origbcocod=301, origsuccod=1, concepto=H2H, tipo_print=0)
+2021-03-29 14:11:23,244 DEBUG [main] s.p.i.c.j.c.i.SSGAuthenticatedConnectionPoolImpl  - jdbc::get_connection with 
+	 - url: jdbc:sybase:Tds:172.16.41.23:4112/Banksys?IS_CLOSED_TEST=select 1 
+	 - urs: perezr 
+	 - password: apolo11* 
+	 - ibs_usr: SSGUsrCredentials(entiadcodpar=1057, entidadpasswpar=PSW CENSYS, paiscod=54, bcocod=301, succod=1, tipdoc=88, usrident=2000001, tercod=17685, origpaiscod=54, origbcocod=301, origsuccod=1, concepto=H2H, tipo_print=0)
+2021-03-29 14:11:23,270 DEBUG [main] s.p.i.c.j.c.IBSConnection  - building ibs_connection with SSGUsrCredentials(entiadcodpar=1057, entidadpasswpar=PSW CENSYS, paiscod=54, bcocod=301, succod=1, tipdoc=88, usrident=2000001, tercod=17685, origpaiscod=54, origbcocod=301, origsuccod=1, concepto=H2H, tipo_print=0)
+2021-03-29 14:11:23,272 DEBUG [main] s.p.i.c.j.c.i.SSGAuthenticatedConnectionPoolImpl  - jdbc::get_connection with 
+	 - url: jdbc:sybase:Tds:172.16.41.23:4112/Banksys?IS_CLOSED_TEST=select 1 
+	 - urs: perezr 
+	 - password: apolo11* 
+	 - ibs_usr: SSGUsrCredentials(entiadcodpar=1057, entidadpasswpar=PSW CENSYS, paiscod=54, bcocod=301, succod=1, tipdoc=88, usrident=2000001, tercod=17686, origpaiscod=54, origbcocod=301, origsuccod=1, concepto=H2H, tipo_print=0)
+2021-03-29 14:11:23,338 DEBUG [main] s.p.i.c.j.c.IBSConnection  - building ibs_connection with SSGUsrCredentials(entiadcodpar=1057, entidadpasswpar=PSW CENSYS, paiscod=54, bcocod=301, succod=1, tipdoc=88, usrident=2000001, tercod=17686, origpaiscod=54, origbcocod=301, origsuccod=1, concepto=H2H, tipo_print=0)
+2021-03-29 14:11:23,340 DEBUG [main] s.p.i.c.j.c.i.SSGAuthenticatedConnectionPoolImpl  - jdbc::get_connection with 
+	 - url: jdbc:sybase:Tds:172.16.41.23:4112/Banksys?IS_CLOSED_TEST=select 1 
+	 - urs: perezr 
+	 - password: apolo11* 
+	 - ibs_usr: SSGUsrCredentials(entiadcodpar=1057, entidadpasswpar=PSW CENSYS, paiscod=54, bcocod=301, succod=1, tipdoc=88, usrident=2000001, tercod=17687, origpaiscod=54, origbcocod=301, origsuccod=1, concepto=H2H, tipo_print=0)
+2021-03-29 14:11:23,370 DEBUG [main] s.p.i.c.j.c.IBSConnection  - building ibs_connection with SSGUsrCredentials(entiadcodpar=1057, entidadpasswpar=PSW CENSYS, paiscod=54, bcocod=301, succod=1, tipdoc=88, usrident=2000001, tercod=17687, origpaiscod=54, origbcocod=301, origsuccod=1, concepto=H2H, tipo_print=0)
+2021-03-29 14:11:23,372 DEBUG [main] s.p.i.c.j.c.i.SSGAuthenticatedConnectionPoolImpl  - jdbc::get_connection with 
+	 - url: jdbc:sybase:Tds:172.16.41.23:4112/Banksys?IS_CLOSED_TEST=select 1 
+	 - urs: perezr 
+	 - password: apolo11* 
+	 - ibs_usr: SSGUsrCredentials(entiadcodpar=1057, entidadpasswpar=PSW CENSYS, paiscod=54, bcocod=301, succod=1, tipdoc=88, usrident=2000001, tercod=17688, origpaiscod=54, origbcocod=301, origsuccod=1, concepto=H2H, tipo_print=0)
+2021-03-29 14:11:23,501 DEBUG [main] s.p.i.c.j.c.IBSConnection  - building ibs_connection with SSGUsrCredentials(entiadcodpar=1057, entidadpasswpar=PSW CENSYS, paiscod=54, bcocod=301, succod=1, tipdoc=88, usrident=2000001, tercod=17688, origpaiscod=54, origbcocod=301, origsuccod=1, concepto=H2H, tipo_print=0)
+2021-03-29 14:11:23,503 DEBUG [main] s.p.i.c.j.c.i.SSGAuthenticatedConnectionPoolImpl  - jdbc::get_connection with 
+	 - url: jdbc:sybase:Tds:172.16.41.23:4112/Banksys?IS_CLOSED_TEST=select 1 
+	 - urs: perezr 
+	 - password: apolo11* 
+	 - ibs_usr: SSGUsrCredentials(entiadcodpar=1057, entidadpasswpar=PSW CENSYS, paiscod=54, bcocod=301, succod=1, tipdoc=88, usrident=2000001, tercod=17689, origpaiscod=54, origbcocod=301, origsuccod=1, concepto=H2H, tipo_print=0)
+2021-03-29 14:11:23,523 DEBUG [main] s.p.i.c.j.c.IBSConnection  - building ibs_connection with SSGUsrCredentials(entiadcodpar=1057, entidadpasswpar=PSW CENSYS, paiscod=54, bcocod=301, succod=1, tipdoc=88, usrident=2000001, tercod=17689, origpaiscod=54, origbcocod=301, origsuccod=1, concepto=H2H, tipo_print=0)
+2021-03-29 14:11:23,525 DEBUG [main] s.p.i.c.j.c.i.SSGAuthenticatedConnectionPoolImpl  - jdbc::get_connection with 
+	 - url: jdbc:sybase:Tds:172.16.41.23:4112/Banksys?IS_CLOSED_TEST=select 1 
+	 - urs: perezr 
+	 - password: apolo11* 
+	 - ibs_usr: SSGUsrCredentials(entiadcodpar=1057, entidadpasswpar=PSW CENSYS, paiscod=54, bcocod=301, succod=1, tipdoc=88, usrident=2000001, tercod=17690, origpaiscod=54, origbcocod=301, origsuccod=1, concepto=H2H, tipo_print=0)
+2021-03-29 14:11:23,552 DEBUG [main] s.p.i.c.j.c.IBSConnection  - building ibs_connection with SSGUsrCredentials(entiadcodpar=1057, entidadpasswpar=PSW CENSYS, paiscod=54, bcocod=301, succod=1, tipdoc=88, usrident=2000001, tercod=17690, origpaiscod=54, origbcocod=301, origsuccod=1, concepto=H2H, tipo_print=0)
+2021-03-29 14:11:23,554 DEBUG [main] s.p.i.c.j.c.i.SSGAuthenticatedConnectionPoolImpl  - jdbc::get_connection with 
+	 - url: jdbc:sybase:Tds:172.16.41.23:4112/Banksys?IS_CLOSED_TEST=select 1 
+	 - urs: perezr 
+	 - password: apolo11* 
+	 - ibs_usr: SSGUsrCredentials(entiadcodpar=1057, entidadpasswpar=PSW CENSYS, paiscod=54, bcocod=301, succod=1, tipdoc=88, usrident=2000001, tercod=17691, origpaiscod=54, origbcocod=301, origsuccod=1, concepto=H2H, tipo_print=0)
+2021-03-29 14:11:23,587 DEBUG [main] s.p.i.c.j.c.IBSConnection  - building ibs_connection with SSGUsrCredentials(entiadcodpar=1057, entidadpasswpar=PSW CENSYS, paiscod=54, bcocod=301, succod=1, tipdoc=88, usrident=2000001, tercod=17691, origpaiscod=54, origbcocod=301, origsuccod=1, concepto=H2H, tipo_print=0)
+2021-03-29 14:11:23,589 DEBUG [main] s.p.i.c.j.c.i.SSGAuthenticatedConnectionPoolImpl  - jdbc::get_connection with 
+	 - url: jdbc:sybase:Tds:172.16.41.23:4112/Banksys?IS_CLOSED_TEST=select 1 
+	 - urs: perezr 
+	 - password: apolo11* 
+	 - ibs_usr: SSGUsrCredentials(entiadcodpar=1057, entidadpasswpar=PSW CENSYS, paiscod=54, bcocod=301, succod=1, tipdoc=88, usrident=2000001, tercod=17692, origpaiscod=54, origbcocod=301, origsuccod=1, concepto=H2H, tipo_print=0)
+2021-03-29 14:11:23,621 DEBUG [main] s.p.i.c.j.c.IBSConnection  - building ibs_connection with SSGUsrCredentials(entiadcodpar=1057, entidadpasswpar=PSW CENSYS, paiscod=54, bcocod=301, succod=1, tipdoc=88, usrident=2000001, tercod=17692, origpaiscod=54, origbcocod=301, origsuccod=1, concepto=H2H, tipo_print=0)
+2021-03-29 14:11:23,622 DEBUG [main] s.p.i.c.j.c.i.SSGAuthenticatedConnectionPoolImpl  - jdbc::get_connection with 
+	 - url: jdbc:sybase:Tds:172.16.41.23:4112/Banksys?IS_CLOSED_TEST=select 1 
+	 - urs: perezr 
+	 - password: apolo11* 
+	 - ibs_usr: SSGUsrCredentials(entiadcodpar=1057, entidadpasswpar=PSW CENSYS, paiscod=54, bcocod=301, succod=1, tipdoc=88, usrident=2000001, tercod=17693, origpaiscod=54, origbcocod=301, origsuccod=1, concepto=H2H, tipo_print=0)
+2021-03-29 14:11:23,652 DEBUG [main] s.p.i.c.j.c.IBSConnection  - building ibs_connection with SSGUsrCredentials(entiadcodpar=1057, entidadpasswpar=PSW CENSYS, paiscod=54, bcocod=301, succod=1, tipdoc=88, usrident=2000001, tercod=17693, origpaiscod=54, origbcocod=301, origsuccod=1, concepto=H2H, tipo_print=0)
+2021-03-29 14:11:23,654 DEBUG [main] s.p.i.c.j.c.i.SSGAuthenticatedConnectionPoolImpl  - jdbc::get_connection with 
+	 - url: jdbc:sybase:Tds:172.16.41.23:4112/Banksys?IS_CLOSED_TEST=select 1 
+	 - urs: perezr 
+	 - password: apolo11* 
+	 - ibs_usr: SSGUsrCredentials(entiadcodpar=1057, entidadpasswpar=PSW CENSYS, paiscod=54, bcocod=301, succod=1, tipdoc=88, usrident=2000001, tercod=17694, origpaiscod=54, origbcocod=301, origsuccod=1, concepto=H2H, tipo_print=0)
+2021-03-29 14:11:23,717 DEBUG [main] s.p.i.c.j.c.IBSConnection  - building ibs_connection with SSGUsrCredentials(entiadcodpar=1057, entidadpasswpar=PSW CENSYS, paiscod=54, bcocod=301, succod=1, tipdoc=88, usrident=2000001, tercod=17694, origpaiscod=54, origbcocod=301, origsuccod=1, concepto=H2H, tipo_print=0)
+2021-03-29 14:11:23,721  INFO [main] s.p.i.c.j.c.s.BasicConnectionPoolSamples  - sleeping ...
+2021-03-29 14:12:17,723  INFO [main] s.p.i.c.j.c.s.BasicConnectionPoolSamples  - releasing connections ...
+2021-03-29 14:12:17,929  INFO [main] s.p.i.c.j.c.s.BasicConnectionPoolSamples  - sleeping again ...

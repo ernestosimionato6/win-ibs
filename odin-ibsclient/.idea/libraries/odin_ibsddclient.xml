@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="odin-ibsddclient">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/target/odin-ibsddclient.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

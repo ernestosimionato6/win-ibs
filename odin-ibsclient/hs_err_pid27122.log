@@ -1,0 +1,86 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGBUS (0x7) at pc=0x00007f7a6c25f6d2, pid=27122, tid=140163819636480
+#
+# JRE version: Java(TM) SE Runtime Environment (8.0_05-b13) (build 1.8.0_05-b13)
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (25.5-b02 mixed mode linux-amd64 compressed oops)
+# Problematic frame:
+# C  [libzip.so+0x116d2]  newEntry+0x62
+#
+# Failed to write core dump. Core dumps have been disabled. To enable core dumping, try "ulimit -c unlimited" before starting Java again
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.sun.com/bugreport/crash.jsp
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00007f7a68009800):  JavaThread "main" [_thread_in_native, id=27123, stack(0x00007f7a6e9e0000,0x00007f7a6eae1000)]
+
+siginfo:si_signo=SIGBUS: si_errno=0, si_code=2 (BUS_ADRERR), si_addr=0x00007f7a5432eb80
+
+Registers:
+RAX=0x00007f7a685f2d60, RBX=0x00007f7a681dd4c0, RCX=0x00007f7a685f2d60, RDX=0x00007f7a685f2d60
+RSP=0x00007f7a6eadcf20, RBP=0x00007f7a6eadcf70, RSI=0x00007f7a68000038, RDI=0x0000000000000048
+R8 =0x0000000000000003, R9 =0x0000000000000048, R10=0x0000000000000005, R11=0x00000000ec6a3130
+R12=0x00007f7a5432eb63, R13=0x00007f7a685f2d60, R14=0x00000000a9530398, R15=0x00007f7a681dd180
+RIP=0x00007f7a6c25f6d2, EFLAGS=0x0000000000010206, CSGSFS=0x0000000000000033, ERR=0x0000000000000004
+  TRAPNO=0x000000000000000e
+
+Top of Stack: (sp=0x00007f7a6eadcf20)
+0x00007f7a6eadcf20:   00007f7a6eadcfb0 00007f7a00000000
+0x00007f7a6eadcf30:   0000003000000000 00007f7a6d81fc0e
+0x00007f7a6eadcf40:   00007f7a685f2d60 00007f7a681dd4c0
+0x00007f7a6eadcf50:   00007f7a681dd180 00007f7a685dd1c0
+0x00007f7a6eadcf60:   00000000a9530398 00007f7a6eadcfd0
+0x00007f7a6eadcf70:   00007f7a6eadcfb0 00007f7a6c25fe00
+0x00007f7a6eadcf80:   0000002c6eadcfb0 00007f7a6eadcfd0
+0x00007f7a6eadcf90:   000000000000002c 00007f7a680099e0
+0x00007f7a6eadcfa0:   00007f7a6eadcfd0 00007f7a6eadd428
+0x00007f7a6eadcfb0:   00007f7a6eadd410 00007f7a6c251c9d
+0x00007f7a6eadcfc0:   0100000000000000 00007f7a681dd180
+0x00007f7a6eadcfd0:   6e6169702f6e6473 64642f7362692f6f
+0x00007f7a6eadcfe0:   2f6e69616d6f642f 64416f7469626544
+0x00007f7a6eadcff0:   632e6f6469726568 000000007373616c
+0x00007f7a6eadd000:   0000000000000000 0000000000000120
+0x00007f7a6eadd010:   0000000000002000 00007f7a68009800
+0x00007f7a6eadd020:   00007f7a6eadd200 00007f7a59106b4f
+0x00007f7a6eadd030:   00000000c4ca5100 0000000000000000
+0x00007f7a6eadd040:   0000000000000000 6e6169702f6e6473
+0x00007f7a6eadd050:   0000000000000000 0000000000000000
+0x00007f7a6eadd060:   4040404040404040 5b5b5b5b5b5b5b5b
+0x00007f7a6eadd070:   2020202020202020 0000000000000000
+0x00007f7a6eadd080:   00ffff0000000000 0000000000000000
+0x00007f7a6eadd090:   00ffffffffffffff 0000000000000000
+0x00007f7a6eadd0a0:   0000000000000000 0000000000000000
+0x00007f7a6eadd0b0:   0000000000000000 00007f7a68009800
+0x00007f7a6eadd0c0:   00007f7a55f8a360 00007f7a55f8a360
+0x00007f7a6eadd0d0:   00007f7a6eadd160 0000000000000000
+0x00007f7a6eadd0e0:   00007f7a68009800 00007f7a6807f9e0
+0x00007f7a6eadd0f0:   00007f7a6855ce68 00007f7a6855ce68
+0x00007f7a6eadd100:   00007f7a6eadd2c0 00007f7a6d62e58c
+0x00007f7a6eadd110:   00007f7a68009800 0000000000000000 
+
+Instructions: (pc=0x00007f7a6c25f6d2)
+0x00007f7a6c25f6b2:   00 48 c7 40 28 00 00 00 00 41 80 7f 30 00 0f 84
+0x00007f7a6c25f6c2:   8a 02 00 00 4c 8b 63 08 4d 2b 67 28 4d 03 67 18
+0x00007f7a6c25f6d2:   41 0f b6 5c 24 1d 41 0f b6 44 24 1c c1 e3 08 09
+0x00007f7a6c25f6e2:   c3 41 0f b6 44 24 1e 88 45 bd 41 0f b6 54 24 20 
+
+Register to memory mapping:
+
+RAX=0x00007f7a685f2d60 is an unknown value
+RBX=0x00007f7a681dd4c0 is an unknown value
+RCX=0x00007f7a685f2d60 is an unknown value
+RDX=0x00007f7a685f2d60 is an unknown value
+RSP=0x00007f7a6eadcf20 is pointing into the stack for thread: 0x00007f7a68009800
+RBP=0x00007f7a6eadcf70 is pointing into the stack for thread: 0x00007f7a68009800
+RSI=0x00007f7a68000038 is an unknown value
+RDI=0x0000000000000048 is an unknown value
+R8 =0x0000000000000003 is an unknown value
+R9 =0x0000000000000048 is an unknown value
+R10=0x0000000000000005 is an unknown value
+R11=0x00000000ec6a3130 is an oop

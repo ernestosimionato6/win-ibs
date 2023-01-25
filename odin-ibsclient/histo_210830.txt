@@ -1,0 +1,1000 @@
+   45  fg
+   46  ls
+   47  export PATH=$PATH:/opt/jdk/jdk1.8.0_05/bin/
+   48  clear
+   49  fg
+   50  export PATH=$PATH:/opt/jdk/jdk1.8.0_05/bin/
+   51  sh run
+   52  sh run.sh 
+   53  sh run_all.sh 
+   54  fg
+   55  sh run_all.sh 
+   56  clear
+   57  fg
+   58  vim 
+   59  clear
+   60  cd ../odin-ibsclient/
+   61  sh build.sh 
+   62  touch bin/pausar_adhesion.sh
+   63  vim bin/pausar_adhesion.sh 
+   64  sh bin/pausar_adhesion.sh 
+   65  sh bin/pausar_adhesion.sh 124 1234 1234
+   66  fg
+   67  sh bin/pausar_adhesion.sh 124 1234 1234
+   68  fg
+   69  sh build.sh 
+   70  exit
+   71  su postgres
+   72  ls
+   73  pwd
+   74  cd ..
+   75  cd home/
+   76  cd ..
+   77  cd opt/h2h
+   78  ls
+   79   281000   | jdbc:sybase:Tds:172.16.41.23:4112/Banksys?IS_CLOSED_TEST=select 1 | FEeDdCdFfB | Sdnadmin1* | 5810                    |     2
+   80  cd ..
+   81  cd h2t
+   82  ls
+   83      javac -classpath ./sajdbc4.jar SybaseExample.java
+   84  javac -classpath ./lib/jconn3.jar src/SybaseExample.java 
+   85      java -classpath "./sajdbc4.jar;." SybaseExample
+   86  ls
+   87  java -classpath "./lib/jconn3.jar;." SybaseExample
+   88  java -classpath "./lib/jconn3.jar;." src/SybaseExample
+   89  cd src/
+   90  ls
+   91  java -classpath "../lib/jconn3.jar;." SybaseExample
+   92  java -classpath /opt/h2t/src/ SybaseExample
+   93  cd ..
+   94  java -classpath /opt/h2t/src/ SybaseExample
+   95  java -classpath ./lib/jconn3.jar:. /opt/h2t/src/ SybaseExample
+   96  java -classpath ./lib/jconn3.jar:./opt/h2t/src/ SybaseExample
+   97  javac -classpath ./lib/jconn3.jar src/com/SybaseExample.java
+   98  java -classpath ./lib/jconn3.jar SybaseExample
+   99  java -classpath ./lib/jconn3.jar:./src/com/SybaseExample.class SybaseExample
+  100  java -classpath ./lib/jconn3.jar:./opt/h2t/src/com/SybaseExample.class SybaseExample
+  101  java -classpath ./lib/jconn3.jar:./opt/h2t/src/com/SybaseExample.class com.SybaseExample
+  102  cd src/com/
+  103  ls
+  104  java -classpath ./lib/jconn3.ja com.SybaseExample
+  105  java -classpath ./lib/jconn3.ja SybaseExample
+  106  java SybaseExample.class 
+  107  java com.SybaseExample
+  108  java SybaseExample
+  109  cd ..
+  110  ls
+  111  touch test.java
+  112  vim test.java 
+  113  ls
+  114  cat test.java 
+  115  javac test.java 
+  116  javac SybaseExample.java 
+  117  la
+  118  ls
+  119  java SybaseExample
+  120  rm SybaseExample.class 
+  121  javac SybaseExample.java 
+  122  java SybaseExample
+  123  cd ..
+  124  java ./src/* SybaseExample
+  125  java -cp ./src/* SybaseExample
+  126  java -classpath "./src/" SybaseExample
+  127  java -classpath "./lib/jconn3.jar:./src/" SybaseExample
+  128  javac "./lib/jconn3.jar" src/SybaseExample.java 
+  129  javac -help
+  130  javac -cp "./lib/jconn3.jar" src/SybaseExample.java 
+  131  java -classpath "./lib/jconn3.jar:./src/" SybaseExample
+  132  javac -cp "./lib/jconn3.jar" src/SybaseExample.java 
+  133  java -classpath "./lib/jconn3.jar:./src/" SybaseExample
+  134  javac -cp "./lib/jconn3.jar" src/SybaseExample.java 
+  135  java -classpath "./lib/jconn3.jar:./src/" SybaseExample
+  136  rm -rf src/SybaseExample.class; javac -cp "./lib/jconn3.jar" src/SybaseExample.java;
+  137  java -classpath "./lib/jconn3.jar:./src/" SybaseExample
+  138  rm -rf src/SybaseExample.class; javac -cp "./lib/jconn3.jar" src/SybaseExample.java;
+  139  java -classpath "./lib/jconn3.jar:./src/" SybaseExample
+  140   javac -cp "./lib/jconn3.jar" src/SybaseExample.java
+  141  rm -rf src/SybaseExample.class; javac -cp "./lib/jconn3.jar" src/SybaseExample.java
+  142  java -classpath "./lib/jconn3.jar:./src/" SybaseExample
+  143  java -classpath "./lib/jconn3.jar:./src/" com.SybaseExample
+  144  java -classpath "./lib/jconn3.jar:./src/*" com.SybaseExample
+  145  java -cp "./lib/jconn3.jar:./src/*" com.SybaseExample
+  146  rm -rf src/com/SybaseExample.class; javac -cp "./lib/jconn3.jar" src/com/SybaseExample.java
+  147  java -cp "./lib/jconn3.jar:./src/*" com.SybaseExample
+  148  java -cp "./lib/jconn3.jar:./src/com" com.SybaseExample
+  149  java -cp "./jconn3.jar" com.SybaseExample
+  150  ls
+  151  cd src/com/
+  152  ls
+  153  java -cp "./jconn3.jar" com.SybaseExample
+  154  java -cp "./jconn3.jar" SybaseExample
+  155  cd ..
+  156  ´wd
+  157  pwd
+  158  ls
+  159  chmod +x build.sh 
+  160  ./build.sh 
+  161  jar
+  162  sudo jar
+  163  ./build.sh 
+  164  chmod +x run.sh 
+  165  ./run.sh 
+  166  ./build.sh 
+  167  ./run.sh 
+  168  ./build.sh 
+  169  ./run.sh 
+  170  ./build.sh 
+  171  ./run.sh 
+  172  ./build.sh 
+  173  ./run.sh 
+  174  ./build.sh 
+  175  ./run.sh 
+  176  ./build.sh 
+  177  ./run.sh 
+  178  ./build.sh 
+  179  ./run.sh 
+  180  ./build.sh 
+  181  ./run.sh 
+  182  ./build.sh 
+  183  ./run.sh 
+  184  ./build.sh 
+  185  ./run.sh 
+  186  ./build.sh 
+  187  ./run.sh 
+  188  ./build.sh 
+  189  ./run.sh 
+  190  ./build.sh 
+  191  ./run.sh 
+  192  ./build.sh 
+  193  ./run.sh 
+  194  ./build.sh 
+  195  ./run.sh 
+  196  ./build.sh 
+  197  ./run.sh 
+  198  cd ..
+  199  ls
+  200  pwd
+  201  cd opt/h2h
+  202  ls
+  203  sh build.sh 
+  204  echo JAVA_HOME
+  205  echo $JAVA_HOME
+  206  cd ..
+  207  cd opt/h2t/
+  208  ls
+  209  cd src/
+  210  ls
+  211  vim com/Runner.java 
+  212  ls
+  213  cd ..
+  214  cd opt/h2t/
+  215  vim
+  216  mc
+  217  cd ..
+  218  ls
+  219  pwd
+  220  cd ..
+  221  cd opt/h2t/
+  222  ./build.sh 
+  223  ./run.sh 
+  224  ./build.sh 
+  225  ./run.sh 
+  226  ./build.sh 
+  227  ./run.sh 
+  228  ./build.sh 
+  229  ./run.sh 
+  230  ./build.sh 
+  231  ./run.sh 
+  232  ./build.sh 
+  233  ./run.sh 
+  234  ./build.sh 
+  235  ./run.sh 
+  236  ./build.sh 
+  237  ./run.sh 
+  238  ./build.sh 
+  239  ./run.sh 
+  240  ./build.sh 
+  241  ./run.sh 
+  242  ./build.sh 
+  243  ./run.sh 
+  244  ./build.sh 
+  245  ./run.sh 
+  246  ./build.sh 
+  247  ./run.sh 
+  248  ./build.sh 
+  249  ./run.sh 
+  250  ./build.sh 
+  251  ./run.sh 
+  252  {?=call sdn_h2h_base ? , ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?}
+  253  ./build.sh 
+  254  ./run.sh 
+  255  ./build.sh 
+  256  ./run.sh 
+  257  ./build.sh 
+  258  ./run.sh 
+  259  ./build.sh 
+  260  ./run.sh 
+  261  ./build.sh 
+  262  ./run.sh 
+  263  ./build.sh 
+  264  ./run.sh 
+  265  ./build.sh 
+  266  ./run.sh 
+  267  ./build.sh 
+  268  ./run.sh 
+  269  ./build.sh 
+  270  ./run.sh 
+  271  ./build.sh 
+  272  ./run.sh 
+  273  ./build.sh 
+  274  ./run.sh 
+  275  ./build.sh 
+  276  ./run.sh 
+  277  ./build.sh 
+  278  ./run.sh 
+  279  ./build.sh 
+  280  ./run.sh 
+  281  ./build.sh 
+  282  ./run.sh 
+  283  ./build.sh 
+  284  ./run.sh 
+  285  ./build.sh 
+  286  ls
+  287  chmod +x build_and_run.sh 
+  288  ./build_and_run.sh
+  289  ls
+  290  ./bin/full_build_and_run.sh 
+  291  ./bin/build.sh;
+  292  ./bin/full_build_and_run.sh 
+  293  ./bin/full_build_and_run.sh
+  294  clear
+  295  tput reset
+  296  ./bin/full_build_and_run.sh
+  297  ls
+  298  grep -r -i registerOutParameter .
+  299  grep -r -i implemented .
+  300  ./bin/full_build_and_run.sh
+  301  pwd
+  302  cd ..
+  303  cd opt/h2t/
+  304  ./bin/full_build_and_run.sh
+  305  grep -r -i registerOutParameter not implemented
+  306  grep -r -i "registerOutParameter not implemented" .
+  307  grep -r -i registerOutParameter not implemented .
+  308  ./bin/full_build_and_run.sh
+  309  [A
+  310  ./bin/full_build_and_run.sh
+  311  {?=call sdn_h2h_base ? , ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?}
+  312  ./bin/full_build_and_run.sh
+  313   {?=call sdn_h2h_base ? , ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?}
+  314  ./bin/full_build_and_run.sh
+  315   {?=call sdn_h2h_base ? , ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?}
+  316  ./bin/full_build_and_run.sh
+  317   ? , ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?}
+  318  ./bin/full_build_and_run.sh
+  319  BASH: Full Build and Run
+  320  BASH: Clearing cache
+  321  BASH: Starting new build
+  322  ./bin/full_build_and_run.sh
+  323  BASH: Full Build and Run
+  324  BASH: Clearing cache
+  325  BASH: Starting new build
+  326  BASH: Compiling
+  327  BASH: Jar Making
+  328  BASH: Running h2t.jar with no parameters
+  329  /// RUNNER
+  330  00:00  INFO: [Runner] main
+  331  00:00  INFO: [SybaseManager] init
+  332  00:00 DEBUG: [SybaseManager] get_login_data
+  333  00:00 DEBUG: [SybaseManager] get_sybase_default_login_data
+  334  00:00 DEBUG: [SybaseManager] get_connection
+  335  00:00  INFO: [ArrangeIBS] run
+  336  00:00 DEBUG: [ArrangeIBS] clean_all_tables
+  337  00:00  INFO: [StoredProcedure] build
+  338  00:00 DEBUG: [query.Builder] get_base_query
+  339  00:00 TRACE: [query.Builder] {?=call sdn_h2h_base ? , ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?}
+  340  00:00 TRACE: [StoredProcedure] query parameters count: 153
+  341  00:00 DEBUG: [StoredProcedure] CallableStatement
+  342  00:00 DEBUG: [StoredProcedure] get_default_params
+  343  00:00 TRACE: [StoredProcedure] params
+  344  00:00 TRACE: [StoredProcedure] [, , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , ]
+  345  00:00 DEBUG: [StoredProcedure] set_primary_inputs_default
+  346  00:00 DEBUG: [StoredProcedure] primary inputs set successfully
+  347  00:00 DEBUG: [StoredProcedure] set_secondary_inputs_default
+  348  00:00 TRACE: [StoredProcedure] params.length: 142
+  349  00:00 TRACE: [StoredProcedure] position: 12 value:
+  350  00:00 TRACE: [StoredProcedure] position: 13 value:
+  351  00:00 TRACE: [StoredProcedure] position: 14 value:
+  352  00:00 TRACE: [StoredProcedure] position: 15 value:
+  353  00:00 TRACE: [StoredProcedure] position: 16 value:
+  354  00:00 TRACE: [StoredProcedure] position: 17 value:
+  355  00:00 TRACE: [StoredProcedure] position: 18 value:
+  356  00:00 TRACE: [StoredProcedure] position: 19 value:
+  357  00:00 TRACE: [StoredProcedure] position: 20 value:
+  358  00:00 TRACE: [StoredProcedure] position: 21 value:
+  359  00:00 TRACE: [StoredProcedure] position: 22 value:
+  360  00:00 TRACE: [StoredProcedure] position: 23 value:
+  361  00:00 TRACE: [StoredProcedure] position: 24 value:
+  362  00:00 TRACE: [StoredProcedure] position: 25 value:
+  363  00:00 TRACE: [StoredProcedure] position: 26 value:
+  364  00:00 TRACE: [StoredProcedure] position: 27 value:
+  365  00:00 TRACE: [StoredProcedure] position: 28 value:
+  366  00:00 TRACE: [StoredProcedure] position: 29 value:
+  367  00:00 TRACE: [StoredProcedure] position: 30 value:
+  368  00:00 TRACE: [StoredProcedure] position: 31 value:
+  369  00:00 TRACE: [StoredProcedure] position: 32 value:
+  370  00:00 TRACE: [StoredProcedure] position: 33 value:
+  371  00:00 TRACE: [StoredProcedure] position: 34 value:
+  372  00:00 TRACE: [StoredProcedure] position: 35 value:
+  373  00:00 TRACE: [StoredProcedure] position: 36 value:
+  374  00:00 TRACE: [StoredProcedure] position: 37 value:
+  375  00:01 TRACE: [StoredProcedure] position: 38 value:
+  376  00:01 TRACE: [StoredProcedure] position: 39 value:
+  377  00:01 TRACE: [StoredProcedure] position: 40 value:
+  378  00:01 TRACE: [StoredProcedure] position: 41 value:
+  379  00:01 TRACE: [StoredProcedure] position: 42 value:
+  380  00:01 TRACE: [StoredProcedure] position: 43 value:
+  381  00:01 TRACE: [StoredProcedure] position: 44 value:
+  382  00:01 TRACE: [StoredProcedure] position: 45 value:
+  383  00:01 TRACE: [StoredProcedure] position: 46 value:
+  384  00:01 TRACE: [StoredProcedure] position: 47 value:
+  385  00:01 TRACE: [StoredProcedure] position: 48 value:
+  386  00:01 TRACE: [StoredProcedure] position: 49 value:
+  387  00:01 TRACE: [StoredProcedure] position: 50 value:
+  388  00:01 TRACE: [StoredProcedure] position: 51 value:
+  389  00:01 TRACE: [StoredProcedure] position: 52 value:
+  390  00:01 TRACE: [StoredProcedure] position: 53 value:
+  391  00:01 TRACE: [StoredProcedure] position: 54 value:
+  392  00:01 TRACE: [StoredProcedure] position: 55 value:
+  393  00:01 TRACE: [StoredProcedure] position: 56 value:
+  394  00:01 TRACE: [StoredProcedure] position: 57 value:
+  395  00:01 
+  396  00:01 TRACE: [Stored
+  397  00:01 TRACE: [StoredProc
+  398  00:01 TRACE: [S
+  399  00:01 TRACE: [St
+  400  00:01 TRACE: [StoredProcedure] position:
+  401  00:01 TRAC
+  402  00:01 TRACE: [StoredProced
+  403  00:01 TRACE: [StoredProcedure] po
+  404  00:01 TRACE: [StoredProcedure] position: 67
+  405  00:01 TRACE: [StoredProcedure] position: 68 value:
+  406  00:01 T
+  407  00:01 TRACE: [StoredProcedure] position: 70
+  408  00:01 TRACE: [StoredProcedure
+  409  ./bin/full_build_and_run.sh 
+  410  java -version
+  411  ./bin/full_build_and_run.sh 
+  412  javadoc
+  413  ./bin/full_build_and_run.sh 
+  414  javadoc
+  415  ./bin/full_build_and_run.sh 
+  416  su postgres
+  417  ls
+  418  pwd
+  419  cd bin/
+  420  ls
+  421  ls -l
+  422  chmod +x *.sh
+  423  ls -l
+  424  cd ..
+  425  ./bin/full_back.sh 
+  426  ACE: [Runner] @test string, string
+  427  00:05 TRACE: expected:  IBS_ASK_CUIT_AND_IF_CAN;SUCCESSFUL;27113465153;5;238.820;BCRA_REQUEST_ORDER;NO_STATUS;0;0;N
+  428  ./bin/full_back.sh 
+  429  00:05 TRACE: expected:  IBS_ASK_CUIT_AND_IF_CAN;SUCCESSFUL;27113465153;5;238.820;BCRA_REQUEST_ORDER;NO_STATUS;0;0;N
+  430  00:05 TRACE: actual: IBS_ASK_CUIT_AND_IF_CAN;SUCCESSFUL;27113465153;5;238.820;BCRA_REQUEST_ORDER;NO_STATUS;0;0;N
+  431  00:05 ERROR: [Runner] testCaseId: 5. testId: 3. ERROR: expected:<[ ]IBS_ASK_CUIT_AND_IF_...> but was:<[]IBS_ASK_CUIT_AND_IF_...>
+  432  rm out.log
+  433  ./bin/full_back.sh > out.log
+  434  rm out.log; ./bin/full_back.sh > out.log
+  435  rm -rf out.log; ./bin/full_back.sh > out.log
+  436  ./bin/full_back.sh
+  437  ./bin/run_back.sh 
+  438  ./bin/full_back.sh
+  439  ./bin/full_back.sh TRACE
+  440  ./bin/full_back.sh INFO
+  441  ./bin/run_back.sh INFO
+  442  ./bin/full_back.sh TRACE
+  443  ./bin/run_back.sh INFO
+  444  ./bin/full_back.sh INFO
+  445  ./bin/full_back.sh DEBUG
+  446  ./bin/run_back.sh INFO
+  447  ./bin/full_back.sh DEBUG
+  448  ./bin/run_back.sh INFO
+  449  history
+  450  ea
+  451  re
+  452  sudo nano ~/.bash_aliases
+  453  sudo nano ~/.bashrc
+  454  source ~/.bashrc
+  455  re
+  456  bkp_h2t
+  457  ls
+  458  pwd
+  459  cd ..
+  460  cd opt/h2t
+  461  ls
+  462  ./bin/run_back.sh INFO
+  463  ea
+  464  ./bin/run_back.sh INFO
+  465  BASH: Running h2t.jar with no parameters
+  466  BASH: end of bash
+  467  BASH: ///
+  468  00:00  INFO: [Orchestrator] /// HOST TO HOST TESTER (H2T)
+  469  00:00  INFO: [Orchestrator] /// process start...
+  470  00:00  INFO: [Orchestrator] logLevel is: INFO
+  471  00:01  INFO: [TestCase] Total test cases found to run: 10
+  472  00:01  INFO: [SybaseManager] init
+  473  00:01  INFO: [StoredProcedure] build
+  474  00:01  WARN: [DataTools] field id 0 not implemented
+  475  00:01  INFO: [Runner] main
+  476  00:02  INFO: [Runner] @@@ Tx: 35 C001
+  477  [root@h2h_test h2t]# ./bin/run_back.sh INFO
+  478  BASH: Running h2t.jar with no parameters
+  479  BASH: end of bash
+  480  BASH: ///
+  481  00:00  INFO: [Orchestrator] /// HOST TO HOST TESTER (H2T)
+  482  00:00  INFO: [Orchestrator] /// process start...
+  483  00:00  INFO: [Orchestrator] logLevel is: INFO
+  484  00:01  INFO: [TestCase] Total test cases found to run: 10
+  485  ./bin/full_back.sh 
+  486  cd bin/
+  487  ls
+  488  ls -l
+  489  chmod +x *.sh
+  490  ls -l
+  491  cd ..
+  492  ./bin/full_back.sh 
+  493  ./bin/full_back.sh TRACE
+  494  ./bin/full_back.sh
+  495  ./bin/full_back.sh TRACE
+  496  ./bin/full_back.sh
+  497  ./bin/full_back.sh DEBUG
+  498  ./bin/full_back.sh TRACE
+  499  ./bin/full_back.sh DEBUG
+  500  ./bin/full_back.sh INFO
+  501  ./bin/run_back.sh 
+  502  ./bin/full_back.sh INFO
+  503  ./bin/full_back.sh TRACE
+  504  ls
+  505  rm -f out.log 
+  506  ls
+  507  ./bin/full_back.sh TRACE > out.log
+  508  rm -f out.log; ./bin/full_back.sh TRACE > out.log
+  509  rm -f out.log; ./bin/full_back.sh INFO
+  510  rm -f out.log; ./bin/full_back.sh debug
+  511  rm -f out.log; ./bin/full_back.sh DEBUG
+  512  cat /etc/httpd/conf.d/h2h_admin.conf 
+  513  cp /etc/httpd/conf.d/h2h_admin.conf /etc/httpd/conf.d/h2t.conf
+  514  sudo vim /etc/httpd/conf.d/h2t.conf 
+  515  systemctl status httpd
+  516  systemctl restart httpd
+  517  systemctl status httpd
+  518  ls
+  519  cd web_panel/
+  520  ls -l
+  521  cd web/
+  522  ls
+  523  ls -l
+  524  cat app_dev.php 
+  525  vim app_dev.php 
+  526  ls
+  527  cd ..
+  528  ls
+  529  cd var/
+  530  ls
+  531  cd ..
+  532  cd opt/h2t/
+  533  ./bin/full_back.sh 
+  534  ./bin/run_back.sh TRACE
+  535  ./bin/run_back.sh INFO
+  536  ./bin/full_back.sh INFO
+  537  history
+  538  cat /etc/httpd/conf/httpd.conf 
+  539  ls
+  540  cat /etc/httpd/conf.d/h2h_admin.conf 
+  541  cat /etc/httpd/conf.d/h2t.conf 
+  542  mc
+  543  history
+  544  sudo nano /etc/httpd/conf.d/h2t.conf
+  545  sudo nano /etc/httpd/conf.d/h2t.conf
+  546  cd ..
+  547  cd ..
+  548  cd usr/local/proyectos/symfony/h2t/web/
+  549  pwd
+  550  sudo nano /etc/httpd/conf.d/h2t.conf
+  551  cd /usr/local/proyectos/symfony/h2t/web/
+  552  pwd
+  553  sudo nano /etc/httpd/conf.d/h2t.conf
+  554  ls
+  555  cd ..
+  556  pwd
+  557  cd ..
+  558  ls
+  559  ll
+  560  chown apache:apache h2t/*
+  561  l
+  562  chown apache:apache h2t
+  563  ll
+  564  chown -R apache:apache h2t
+  565  cd /
+  566  cat /var/log/httpd/error_log
+  567  systemctl restart httpd.service
+  568  systemctl status httpd.service
+  569  cat /var/log/httpd/error_log
+  570  sudo nano /etc/httpd/conf.d/h2t.conf
+  571  ea
+  572  re
+  573  sapache
+  574  rapache
+  575  sapache
+  576  cd ..
+  577  cd root/
+  578  ea
+  579  re
+  580  ls
+  581  cd ..
+  582  cd opt/h2t/
+  583  cd d
+  584  cd db
+  585  ls
+  586  psql -U postgres -v -d h2t -f all_db_scripts.sql
+  587  su postgres
+  588  cd /root/
+  589  ls
+  590  history
+  591  psql -U postgres -v -d h2t -f script.sql
+  592  su postgres
+  593  ls
+  594  pwd
+  595  psql -U postgres -v -d h2t -f script.sql
+  596  su postgres
+  597  ls
+  598  history
+  599  psql -U postgres -v -d h2t -f script.sql
+  600  su postgres
+  601  psql -U postgres -v -d h2t -f script.sql
+  602  su postgres
+  603  psql -U postgres -v -d h2t -f script.sql
+  604  su postgres
+  605  psql -U postgres -v -d h2t -f script.sql
+  606  su postgres
+  607  psql -U postgres -v -d h2t -f script.sql
+  608  su postgres
+  609  psql -U postgres -v -d h2t -f script.sql
+  610  su postgrs
+  611  su postgres
+  612  ls
+  613  history
+  614  psql -U postgres -v -d h2t -f script.sql
+  615  su postgres
+  616  ls
+  617  ea
+  618  re
+  619  sudo nano ~/.bash_aliases
+  620  source ~/.bash_aliases
+  621  ls
+  622  pwd
+  623  psql -U postgres -v -d h2t -f script.sql
+  624  su postgres
+  625  psql -U postgres -v -d h2t -f script.sql
+  626  su postgres
+  627  pwd
+  628  cd ..
+  629  cd opt/
+  630  cd h2t
+  631  ls
+  632  ./bin/full_back.sh 
+  633  ./bin/run_back.sh 
+  634  cd /usr/local/proyectos/symfony/h2t/
+  635  ls
+  636  ea
+  637  re
+  638  h2tclear
+  639  pwd
+  640  php bin/console cache:clear --dev
+  641  php bin/console cache:clear -dev
+  642  php bin/console cache:clear -v
+  643  php bin/console cache:clear -h
+  644  ea
+  645  re
+  646  run_sql_h2t 
+  647  php -v
+  648  node
+  649  su postgres
+  650  cd /opt/pianolab/odin-lab/modules/
+  651  ls
+  652  cd odin-ibsclient/
+  653  ls
+  654  sh build.sh 
+  655  vim src/main/java/sdn/piano/ibs/dd/client/
+  656  sh build.sh 
+  657  vim src/main/java/sdn/piano/ibs/dd/client/request/IBSDDPausarDebitoAdheridoRequest.java 
+  658  cd /opt/pianolab/odin-lab/
+  659  ls
+  660  cd modules/
+  661  ls
+  662  cd odin-ibsclient/
+  663  ls
+  664  tree target/dependency/
+  665  find target/dependency/
+  666  cd ../
+  667  ls
+  668  cd odin-ibsclient/
+  669  ls
+  670  history | grep prop
+  671  cd ../  321  while true; do sh build.sh; sleep 30; sh ./bin/check_config.sh ibs_config.properties; sleep 30; clear; done;
+  672  while true; do sh build.sh; sleep 30; sh ./bin/check_config.sh ibs_config.properties; sleep 30; clear; done;
+  673  echo $JAVA_HOME 
+  674  sh ./bin/check_config.sh 
+  675  while true; do sh build.sh; sleep 30; sh ./bin/check_config.sh ibs_config.properties; sleep 30; clear; done;
+  676  tree src
+  677  find src/
+  678  clear
+  679  cd ../
+  680  ls
+  681  ls -l
+  682  cd do
+  683  cd odin-service/
+  684  ls
+  685  sh run.sh 
+  686  vim run.sh 
+  687  pwd
+  688  cd ../odin-ibsclient/
+  689  ls
+  690  sh build.sh 
+  691  fg
+  692  sh build.sh 
+  693  fg
+  694  sh build.sh 
+  695  clear
+  696  l
+  697  sh build.sh \
+  698  clear
+  699  sh build.sh 
+  700  j
+  701  sh build.sh 
+  702  export PATH=$PATH:/opt/jdk/jdk1.8.0_05/bin/
+  703  sh build.sh 
+  704  rm -rf target/classes/sdn/*
+  705  sh build.sh 
+  706  ls target/
+  707  cd ../
+  708  cd odin-service/
+  709  sh run.sh 
+  710  pwd
+  711  cd ..
+  712  cd opt/h2t/
+  713  ./bin/run_back.sh TRACE
+  714  ./bin/run_back.sh
+  715  ./bin/full_back.sh 
+  716  ea
+  717  bkp_h2t
+  718  php --version
+  719  echo "deb http://packages.dotdeb.org wheezy-php56 all" >> /etc/apt/sources.list.d/dotdeb.list
+  720  cd /opt/pianolab/odin-lab/
+  721  ls
+  722  cd modules/
+  723  ls
+  724  vim odin-ibsclient/
+  725  cd odin-ibsclient/
+  726  ls
+  727  vim src/main/java/sdn/
+  728  find src/ 
+  729  find src/ | grep IBSTramite
+  730  fg
+  731  sh build.sh 
+  732  fg
+  733  cd /opt/pianolab/
+  734  ls
+  735  cd odin-lab/
+  736  ls
+  737  cd modules/
+  738  ls
+  739  cd link-wsgateway/
+  740  ls
+  741  sh run
+  742  sh run.sh 
+  743  cat run
+  744  ls
+  745  sh run.sh 
+  746  cat run
+  747  cat run.sh 
+  748  ls target/
+  749  vim target/link-wsgateway.jar 
+  750  cat run
+  751  cat run.sh
+  752  ./run.sh
+  753  sudo chmod -R 777 target/*
+  754  sh run.sh 
+  755  sh build.sh
+  756  export PATH=$PATH:/opt/jdk/jdk1.8.0_05/bin/
+  757  sh build.sh
+  758  sh run.sh 
+  759  vim target/link-wsgateway.jar 
+  760  fg
+  761  vim run.sh 
+  762  sh run
+  763  sh run.sh 
+  764  vim src/main/java/sdn/piano/odin/server/
+  765  sh run
+  766  sh run.sh 
+  767  sh run
+  768  sh run.sh 
+  769  fg
+  770  sh run.sh 
+  771  fg
+  772  cat run.sh 
+  773  cat src/main/resources/
+  774  cat src/main/resources/application.properties 
+  775  jps -a
+  776  sudo jps -a
+  777  sudo jps 
+  778  jps
+  779  kill -9 32695
+  780  jps
+  781  sh run.sh 
+  782  vim var/logs/odin/link-wsgateway.2021-07-01.gz 
+  783  fg
+  784  clear
+  785  fg
+  786  sh run.sh 
+  787  vim src/main/
+  788  fg
+  789  sh run.sh 
+  790  clear
+  791  cd ../
+  792  ls
+  793  cd odin-
+  794  cd odin-ibsclient/
+  795  ls
+  796  clear
+  797  ls
+  798  sh bin/pausar_adhesion.sh 
+  799  sh bin/pausar_adhesion.sh 2989 11 0010500091278813
+  800  sh build.sh 
+  801  fg
+  802  sh build.sh 
+  803  mv src/main/java/sdn/piano/ibs/dd/domain/IBSTramite.java src/main/java/sdn/piano/ibs/dd/domain/Tramite.java
+  804  fg
+  805  sh build.sh 
+  806  fg
+  807  vim src/main/java/sdn/sh build.sh 
+  808  sh build.sh 
+  809  fg
+  810  sh build.sh 
+  811  sh bin/pausar_adhesion.sh 2989 11 0010500091278813
+  812  sh build.sh 
+  813  sh bin/pausar_adhesion.sh 2989 11 0010500091278813
+  814  sh build.sh 
+  815  history | grep realizados
+  816  sh bin/pausar_adhesion.sh 11 0010500091278813 2989
+  817  sh build.sh 
+  818  sh bin/pausar_adhesion.sh 11 0010500091278813 2989
+  819  sh ubil
+  820  sh build.sh 
+  821  fg
+  822  sh build.sh 
+  823  cd /opt/pianolab/odin-lab/
+  824  ls
+  825  cd modules/
+  826  ls
+  827  clear
+  828  ls
+  829  cd odin-ibsclient/
+  830  ls
+  831  export PATH=$PATH:/opt/jdk/jdk1.8.0_05/bin/
+  832  sh bin/obtener_debitos_adheridos.sh "11" "0010500091278813"
+  833  while true; do sh bin/obtener_debitos_adheridos.sh "11" "0010500091278813"; sleep 5; clear; done;
+  834  while true; do sh bin/obtener_debitos_adheridos.sh "11" "0010500091278813"; sleep 10; clear; done;
+  835  ls
+  836  vim logback.xml 
+  837  while true; do sh bin/obtener_debitos_adheridos.sh "11" "0010500091278813"; sleep 10; clear; done;
+  838  rm -rf target/classes/sdn/*
+  839  while true; do sh bin/obtener_debitos_adheridos.sh "11" "0010500091278813"; sleep 10; clear; done;
+  840  fg
+  841  while true; do sh bin/obtener_debitos_adheridos.sh "11" "0010500091278813"; sleep 10; clear; done;
+  842  while true; do sh bin/obtener_debitos_adheridos.sh "11" "0010500091278813"; sleep 4; clear; done;
+  843  fg
+  844  while true; do sh bin/obtener_debitos_adheridos.sh "11" "0010500091278813"; sleep 4; clear; done;
+  845  clear
+  846  ls
+  847  clear
+  848  while true; do sh bin/obtener_debitos_adheridos.sh "11" "0010500091278813"; sleep 4; clear; done;
+  849  while true; do sh bin/obtener_debitos_adheridos.sh "11" "0010500091278813"; sleep 15; clear; done;
+  850  export PATH=$PATH:/opt/jdk/jdk1.8.0_05/bin/
+  851  cd ../link-wsgateway/
+  852  sh run
+  853  sh run.sh 
+  854  sh run_all.sh 
+  855  fg
+  856  vim src/main/java/
+  857  fg
+  858  clear
+  859  vim src/main/
+  860  sh build.sh
+  861  sh run_all.sh 
+  862  rm -rf target/classes/sdn/piano/*
+  863  sh build.sh
+  864  sh run_all.sh 
+  865  vim run_all.sh 
+  866  sh run_all.sh 
+  867  clear
+  868  ls
+  869  vim logback.xml 
+  870  sh run_all.sh 
+  871  sh build.sh
+  872  sh run_all.sh 
+  873  vim run_all.sh 
+  874  sh run_all.sh 
+  875  vim link_credentials.properties 
+  876  sh build.sh
+  877  sh run_all.sh 
+  878  sh build.sh
+  879  sh ubil
+  880  sh build.sh
+  881  :88
+  882  sh build.sh
+  883  run_all
+  884  run_all.sh
+  885  ls
+  886  sh run_all.sh 
+  887  sh build.sh
+  888  sh run_all.sh 
+  889  sh build.sh
+  890  sh run_all.sh 
+  891  exit
+  892  export PATH=$PATH:/opt/jdk/jdk1.8.0_05/bin/
+  893  cd /opt/pianolab/odin-lab/modules/
+  894  ls
+  895  cd odin-ibsclient/
+  896  ls
+  897  sh build.sh 
+  898  white true; do sh build.sh; sleep 5; clear; done;
+  899  while true; do sh build.sh; sleep 5; clear; done;
+  900  while true; do sh build.sh; sleep 10; clear; done;
+  901  vim build.sh 
+  902  !
+  903  history
+  904  while true; do sh build.sh; sleep 10; clear; done;
+  905  find target/
+  906  tree target/classes/
+  907  find target/classes/
+  908  sh build.sh 
+  909  !
+  910  sh build.sh 
+  911  while true; do sh build.sh; sleep 10; clear; done;
+  912  while true; do sh build.sh; sleep 5; clear; done;
+  913  while true; do sh build.sh; sleep 5; clear; done; 
+  914  fg
+  915  while true; do sh build.sh; sleep 5; clear; done; 
+  916  clear
+  917  rm -rf target/classes/sdn/*
+  918  while true; do sh build.sh; sleep 5; clear; done; 
+  919  rm -rf target/classes/sdn/*
+  920  while true; do sh build.sh; sleep 5; clear; done; 
+  921  while true; do sh build.sh; sleep 15; clear; done; 
+  922  j
+  923  while true; do sh build.sh; sleep 15; clear; done; j
+  924  while true; do sh build.sh; sleep 15; clear; done; 
+  925  while true; do sh build.sh; sleep 30; clear; done; 
+  926  cd ../link-wsgateway/
+  927  ls
+  928  while true; do sh build.sh; sleep 30; clear; done; 
+  929  ls
+  930  while true; do sh build.sh; sleep 30; clear; done; \
+  931  while true; do sh build.sh; sleep 30; clear; done; 
+  932  sh build.sh
+  933  mv src/main/java/sdn/piano/odin/application ~/
+  934  sh build.sh
+  935  mv ../odin-service/src/main/java/link src/main/java/
+  936  cd ../odin-service/
+  937  sh build.sh 
+  938  sh ubil
+  939  sh build.sh 
+  940  clear
+  941  sh build.sh 
+  942  sh run.sh n
+  943  sh ur
+  944  sh run.sh 
+  945  sh build.sh 
+  946  sh run.sh 
+  947  sh build.sh 
+  948  sh run.sh 
+  949  sh build.sh 
+  950  sh run.sh 
+  951  sh build.sh 
+  952  exit
+  953  clear
+  954  cd /opt/pianolab/odin-lab/modules/
+  955  ls
+  956  cd odin-ibsclient/
+  957  ls
+  958  vim src/main/java/
+  959  cd /opt/pianolab/odin-lab/
+  960  ls
+  961  cd modules/
+  962  ls
+  963  cd odin-ibsclient/
+  964  ls
+  965  sh build.sh 
+  966  export PATH=$PATH:/opt/jdk/jdk1.8.0_05/bin/
+  967  sh build.sh 
+  968  sh bin/pausar_adhesion.sh 11 0010500091278813 2989
+  969  sh build.sh 
+  970  sh bin/pausar_adhesion.sh 11 0010500091278813 2989
+  971  sh build.sh 
+  972  sh bin/pausar_adhesion.sh 11 0010500091278813 2989
+  973  sh build.sh 
+  974  sh bin/pausar_adhesion.sh 11 0010500091278813 2989
+  975  sh bin/obtener_debitos_adheridos.sh 11 0010500091278813
+  976  sh build.sh 
+  977  sh bin/pausar_adhesion.sh 11 0010500091278813 2989
+  978  sh build.sh 
+  979  sh bin/pausar_adhesion.sh 11 0010500091278813 2989
+  980  sh build.sh 
+  981  sh bin/pausar_adhesion.sh 11 0010500091278813 2989
+  982  sh build.sh 
+  983  sh bin/pausar_adhesion.sh 11 0010500091278813 2989
+  984  sh build.sh 
+  985  sh bin/pausar_adhesion.sh 11 0010500091278813 2989
+  986  sh build.sh 
+  987  sh bin/pausar_adhesion.sh 11 0010500091278813 2989
+  988  sh build.sh 
+  989  sh bin/pausar_adhesion.sh 11 0010500091278813 2989
+  990  sh build.sh 
+  991  sh bin/pausar_adhesion.sh 11 0010500091278813 2989
+  992  sh build.sh 
+  993  sh bin/pausar_adhesion.sh 11 0010500091278813 2989
+  994  sh build.sh 
+  995  sh bin/pausar_adhesion.sh 11 0010500091278813 2989
+  996  sh build.sh 
+  997  sh bin/pausar_adhesion.sh 11 0010500091278813 2989
+  998  sh build.sh 
+  999  sh bin/pausar_adhesion.sh 11 0010500091278813 2989
+ 1000  sh bin/obtener_debitos_realizados.sh 11 0010500091278813
+ 1001  clear
+ 1002  cd odin-modules /opt/pianolab/odin-lab/modules
+ 1003  ln -s odin-modules /opt/pianolab/odin-lab/modules
+ 1004  ls
+ 1005  ls -l
+ 1006  ln -s ./odin-modules /opt/pianolab/odin-lab/modules
+ 1007  ln -s /opt/pianolab/odin-lab/modules odin-modules
+ 1008  cd odin-modules/
+ 1009  ls
+ 1010  cd odin-ibsclient/
+ 1011  export PATH=$PATH:/opt/jdk/jdk1.8.0_05/bin/
+ 1012  sh bin/pausar_adhesion.sh 11 0010500091278813 2989
+ 1013  fg
+ 1014  vim bin/pausar_adhesion.sh 
+ 1015  sh build.sh 
+ 1016  sh bin/bajar_adhesion.sh 11 0010500091278813 2989
+ 1017  fg
+ 1018  vim bin/pausar_adhesion.sh 
+ 1019  sh bin/reanudar_adhesion.sh 
+ 1020  sh build.sh 
+ 1021  edit src/main/java/sdn/piano/ibs/dd/client/request/IBSDDReanudarrDebitoAdheridoRequest.java 
+ 1022  vim src/main/java/sdn/piano/ibs/dd/client/request/IBSDDReanudarrDebitoAdheridoRequest.java 
+ 1023  sh build.sh 
+ 1024  rm -rf target/classes/sdn/*
+ 1025  sh build.sh 
+ 1026  rm src/main/java/sdn/piano/ibs/dd/client/request/IBSDDReanudarrDebitoAdheridoRequest.java 
+ 1027  rm target/classes/sdn/piano/ibs/dd/client/request/IBSDDReanudarrDebitoAdheridoRequest.java 
+ 1028  sh build.sh 
+ 1029  fg
+ 1030  sh build.sh 
+ 1031  sh bin/reanudar_adhesion.sh 11 0010500091278813 2989
+ 1032  sh build.sh 
+ 1033  find src/main/java/sdn/piano/ibs/dd/client/request/
+ 1034  mv src/main/java/sdn/piano/ibs/dd/client/request/IBSReversarDebitoRealizadoRequest.java  src/main/java/sdn/piano/ibs/dd/client/request/IBSDDReversarDebitoRealizadoRequest.java 
+ 1035  sh build.sh 
+ 1036  fg
+ 1037  sh build.sh 
+ 1038  cp bin/bajar_adhesion.sh bin/reversar_realizado.sh
+ 1039  vim bin/reversar_realizado.sh 
+ 1040  sh bin/reversar_realizado.sh 11 0010500091278813 2989
+ 1041  fg
+ 1042  clear
+ 1043  ls
+ 1044  history > histo_210830.txt

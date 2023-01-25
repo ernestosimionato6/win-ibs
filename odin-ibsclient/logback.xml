@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration debug="false" scan="false" scanPeriod="15 seconds">
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+	<encoder>
+			<pattern>%d %5p [%t] %c{1} %X{loginId, requestId} - %m%n</pattern>
+	</encoder>
+	</appender>
+
+	<property name="LOG_FILE" value="odin"/>
+	<property name="LOG_DIR" value="var/logs/odin" />
+	<!--appender name="FILE" class="ch.qos.logback.core.FileAppender"-->
+	<appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${LOG_DIR}/ibs-ddclient.log</file>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+		<!-- daily rollover -->
+		<fileNamePattern>${LOG_DIR}/ibs-ddclient.%d{yyyy-MM-dd}.gz</fileNamePattern>
+		<!-- keep 30 day's worth of history capped at 3GB total size -->
+		<maxHistory>30</maxHistory>
+		<totalSizeCap>500MB</totalSizeCap>
+		</rollingPolicy>
+		<encoder>
+			<!--pattern>%d{yyyy-MM-dd} | %d{HH:mm:ss.SSS} | %thread | %5p | %logger{25} | %12(ID: %8mdc{id}) | %m%n</pattern>
+			<pattern>%d{ISO8601,UTC} %p %t %c %M - %m%n</pattern -->
+			<pattern>%d %5p [%t] %c{1} %X{loginId, requestId} - %m%n</pattern>
+		</encoder>
+	</appender>
+
+	<logger name="org.springframework.web.filter.CommonsRequestLoggingFilter" level="DEBUG" additivity="false">
+		<appender-ref ref="STDOUT"/>
+		<appender-ref ref="FILE"/>
+	</logger>
+
+
+        <logger name="java.sql" level="INFO" additivity="false">
+		<appender-ref ref="STDOUT"/>
+		<appender-ref ref="FILE"/>
+	</logger>
+        <logger name="com.sybase" level="INFO" additivity="false">
+		<appender-ref ref="STDOUT"/>
+		<appender-ref ref="FILE"/>
+	</logger>
+
+
+	<logger name="sdn" level="TRACE" additivity="false">
+		<appender-ref ref="STDOUT"/>
+		<appender-ref ref="FILE"/>
+	</logger>
+	<logger name="org.springframework.web" level="INFO" additivity="false">
+		<appender-ref ref="STDOUT"/>
+		<appender-ref ref="FILE"/>
+	</logger>
+	<logger name="org.springframework.security" level="INFO" additivity="false">
+		<appender-ref ref="STDOUT"/>
+		<appender-ref ref="FILE"/>
+	</logger>
+	<logger name="org.springframework.ws" level="INFO" additivity="true">
+		<appender-ref ref="STDOUT"/>
+		<appender-ref ref="FILE"/>
+	</logger>
+	<logger name="org.springframework.ws.client.MessageTracing.sent" level="INFO" additivity="true">
+		<appender-ref ref="STDOUT"/>
+		<appender-ref ref="FILE"/>
+	</logger>
+	<logger name="org.springframework.ws.client.MessageTracing.received" level="INFO" additivity="true">
+		<appender-ref ref="STDOUT"/>
+		<appender-ref ref="FILE"/>
+	</logger>
+	<logger name="org.springframework.ws.client" level="INFO" additivity="true">
+		<appender-ref ref="STDOUT"/>
+		<appender-ref ref="FILE"/>
+	</logger>
+
+
+
+	<logger name="org.qos.logback" level="ERROR" additivity="false">
+		<appender-ref ref="STDOUT"/>
+		<appender-ref ref="FILE"/>
+	</logger>
+	<logger name="ch" level="ERROR" additivity="false">
+		<appender-ref ref="STDOUT"/>
+		<appender-ref ref="FILE"/>
+	</logger>
+	<logger name="org" level="INFO" additivity="false">
+		<appender-ref ref="STDOUT"/>
+		<appender-ref ref="FILE"/>
+	</logger>
+	<root level="INFO">
+		<appender-ref ref="STDOUT"/>
+		<appender-ref ref="FILE"/>
+	</root>
+
+</configuration>
+

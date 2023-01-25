@@ -12,6 +12,9 @@ import static java.lang.System.out;
 
 public class JDBCCheckerCommand {
 
+    public static String jdbcUrl(String host, String port, String database) {
+        return "jdbc:sybase:Tds:"+host+":"+port+"/"+database+"?IS_CLOSED_TEST=select 1";
+    }
 
     /**
         [
@@ -21,6 +24,13 @@ public class JDBCCheckerCommand {
              username = softdlenoa,
              password =
         ]
+        Main:
+            ID : sysbase_jconn
+            name : Banksys
+        Server:
+            Address: 172.17.21.5:5000
+            Database: Banksys
+            URL: jdbc:sybase:Tds:172.17.21.5:5000?ServiceName=Banksys
     **/
     public static void main(String args[]) throws Exception {
         String connectionUrl = args[0];

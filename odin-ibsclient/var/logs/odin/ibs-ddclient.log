@@ -1,0 +1,80 @@
+2021-09-13 15:02:47,404 TRACE [main] s.p.i.d.c.c.IBSDDClientConfigLoader  - loading ibs_dd_client_config from ibs_config.properties.
+2021-09-13 15:02:47,496 TRACE [main] s.p.i.d.c.c.IBSDDClientConfigLoader  - properties loaded. 
+ {ibs.entidadcodpar=1057, ibs.tercod=18, ibs.bcocod=301, ibs.password=Sdnadmin1*, ibs.origpaiscod=54, ibs.origbcocod=301, ibs.username=FEeDdCdFfB, ibs.tipoPrint=0, ibs.entidadpasswpar=PSW CENSYS, ibs.paiscod=54, ibs.port=4112, ibs.succod=1, ibs.initial_pool_size=5, ibs.concepto=H2H, ibs.usrident=2000001, ibs.host=172.16.41.23, ibs.database=Banksys, ibs.origsuccod=1, ibs.tipdoc=88, ibs.terminales=17680,17681,17682,17683,17684,17685}
+2021-09-13 15:02:48,220 TRACE [main] s.p.i.d.c.c.IBSDDClientConfigLoader  - ibs_dd_client_config loaded from ibs_config.properties. 
+ ┌───────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│IBSDD_CONFIGURATION                                                                                    │
+├┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┤
+├┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┼┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┼┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┤
+│                          paiscod │ 54                               │class java.lang.Integer          │
+│                           tercod │ 18                               │class java.lang.Integer          │
+│                        tipoPrint │ 0                                │class java.lang.Integer          │
+│                         usrident │ 2000001                          │class java.lang.Integer          │
+│                           bcocod │ 301                              │class java.lang.Integer          │
+│                           succod │ 1                                │class java.lang.Integer          │
+│                    entidadcodpar │ 1057                             │class java.lang.Integer          │
+│                  entidadpasswpar │ PSW CENSYS                       │class java.lang.String           │
+│                         database │ Banksys                          │class java.lang.String           │
+│                         password │ Sdnadmin1*                       │class java.lang.String           │
+│                           tipdoc │ 88                               │class java.lang.Integer          │
+│                       origsuccod │ 1                                │class java.lang.Integer          │
+│                             port │ 4112                             │class java.lang.String           │
+│                       terminales │ 17680  17681  17682  17683  17684│class java.util.ArrayList        │
+│                                  │ 17685                            │                                 │
+│                             host │ 172.16.41.23                     │class java.lang.String           │
+│                         concepto │ H2H                              │class java.lang.String           │
+│                      origpaiscod │ 54                               │class java.lang.Integer          │
+│                       origbcocod │ 301                              │class java.lang.Integer          │
+│                  initialPoolSize │ 5                                │class java.lang.Integer          │
+│                         username │ FEeDdCdFfB                       │class java.lang.String           │
+└──────────────────────────────────┴──────────────────────────────────┴─────────────────────────────────┘
+2021-09-13 15:02:48,222 TRACE [main] s.p.i.d.c.i.IBSDDClientImpl  - starting connections...
+2021-09-13 15:02:48,258 TRACE [main] s.p.i.c.j.c.i.SSGAuthenticatedConnectionPoolImpl  - jdbc::get_connection with 
+	 - url: jdbc:sybase:Tds:172.16.41.23:4112/Banksys?IS_CLOSED_TEST=select 1 
+	 - urs: FEeDdCdFfB 
+	 - password: Sdnadmin1* 
+	 - ibs_usr: SSGUsrCredentials(entidadcodpar=1057, entidadpasswpar=PSW CENSYS, paiscod=54, bcocod=301, succod=1, tipdoc=88, usrident=2000001, tercod=17680, origpaiscod=54, origbcocod=301, origsuccod=1, concepto=H2H, tipoPrint=0)
+2021-09-13 15:02:48,776 TRACE [main] s.p.i.c.j.c.IBSConnection  - building ibs_connection with SSGUsrCredentials(entidadcodpar=1057, entidadpasswpar=PSW CENSYS, paiscod=54, bcocod=301, succod=1, tipdoc=88, usrident=2000001, tercod=17680, origpaiscod=54, origbcocod=301, origsuccod=1, concepto=H2H, tipoPrint=0)
+2021-09-13 15:02:48,778 DEBUG [main] s.p.i.c.j.c.IBSConnection  -  @TODO call(ssg_check_login_usr) with SSGUsrCredentials(entidadcodpar=1057, entidadpasswpar=PSW CENSYS, paiscod=54, bcocod=301, succod=1, tipdoc=88, usrident=2000001, tercod=17680, origpaiscod=54, origbcocod=301, origsuccod=1, concepto=H2H, tipoPrint=0)
+2021-09-13 15:02:48,929 DEBUG [main] s.p.i.s.j.p.SSGCheckLoginUsr  - Compiled stored procedure. Call string is [{call ssg_check_login_usr(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)}]
+2021-09-13 15:02:48,932 DEBUG [main] s.p.i.s.j.p.SSGCheckLoginUsr  - RdbmsOperation with SQL [ssg_check_login_usr] compiled
+2021-09-13 15:02:49,067 TRACE [main] s.p.i.c.j.c.i.SSGAuthenticatedConnectionPoolImpl  - jdbc::get_connection with 
+	 - url: jdbc:sybase:Tds:172.16.41.23:4112/Banksys?IS_CLOSED_TEST=select 1 
+	 - urs: FEeDdCdFfB 
+	 - password: Sdnadmin1* 
+	 - ibs_usr: SSGUsrCredentials(entidadcodpar=1057, entidadpasswpar=PSW CENSYS, paiscod=54, bcocod=301, succod=1, tipdoc=88, usrident=2000001, tercod=17681, origpaiscod=54, origbcocod=301, origsuccod=1, concepto=H2H, tipoPrint=0)
+2021-09-13 15:02:49,119 TRACE [main] s.p.i.c.j.c.IBSConnection  - building ibs_connection with SSGUsrCredentials(entidadcodpar=1057, entidadpasswpar=PSW CENSYS, paiscod=54, bcocod=301, succod=1, tipdoc=88, usrident=2000001, tercod=17681, origpaiscod=54, origbcocod=301, origsuccod=1, concepto=H2H, tipoPrint=0)
+2021-09-13 15:02:49,121 DEBUG [main] s.p.i.c.j.c.IBSConnection  -  @TODO call(ssg_check_login_usr) with SSGUsrCredentials(entidadcodpar=1057, entidadpasswpar=PSW CENSYS, paiscod=54, bcocod=301, succod=1, tipdoc=88, usrident=2000001, tercod=17681, origpaiscod=54, origbcocod=301, origsuccod=1, concepto=H2H, tipoPrint=0)
+2021-09-13 15:02:49,123 DEBUG [main] s.p.i.s.j.p.SSGCheckLoginUsr  - Compiled stored procedure. Call string is [{call ssg_check_login_usr(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)}]
+2021-09-13 15:02:49,123 DEBUG [main] s.p.i.s.j.p.SSGCheckLoginUsr  - RdbmsOperation with SQL [ssg_check_login_usr] compiled
+2021-09-13 15:02:49,147 TRACE [main] s.p.i.c.j.c.i.SSGAuthenticatedConnectionPoolImpl  - jdbc::get_connection with 
+	 - url: jdbc:sybase:Tds:172.16.41.23:4112/Banksys?IS_CLOSED_TEST=select 1 
+	 - urs: FEeDdCdFfB 
+	 - password: Sdnadmin1* 
+	 - ibs_usr: SSGUsrCredentials(entidadcodpar=1057, entidadpasswpar=PSW CENSYS, paiscod=54, bcocod=301, succod=1, tipdoc=88, usrident=2000001, tercod=17682, origpaiscod=54, origbcocod=301, origsuccod=1, concepto=H2H, tipoPrint=0)
+2021-09-13 15:02:49,198 TRACE [main] s.p.i.c.j.c.IBSConnection  - building ibs_connection with SSGUsrCredentials(entidadcodpar=1057, entidadpasswpar=PSW CENSYS, paiscod=54, bcocod=301, succod=1, tipdoc=88, usrident=2000001, tercod=17682, origpaiscod=54, origbcocod=301, origsuccod=1, concepto=H2H, tipoPrint=0)
+2021-09-13 15:02:49,199 DEBUG [main] s.p.i.c.j.c.IBSConnection  -  @TODO call(ssg_check_login_usr) with SSGUsrCredentials(entidadcodpar=1057, entidadpasswpar=PSW CENSYS, paiscod=54, bcocod=301, succod=1, tipdoc=88, usrident=2000001, tercod=17682, origpaiscod=54, origbcocod=301, origsuccod=1, concepto=H2H, tipoPrint=0)
+2021-09-13 15:02:49,200 DEBUG [main] s.p.i.s.j.p.SSGCheckLoginUsr  - Compiled stored procedure. Call string is [{call ssg_check_login_usr(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)}]
+2021-09-13 15:02:49,200 DEBUG [main] s.p.i.s.j.p.SSGCheckLoginUsr  - RdbmsOperation with SQL [ssg_check_login_usr] compiled
+2021-09-13 15:02:49,220 TRACE [main] s.p.i.c.j.c.i.SSGAuthenticatedConnectionPoolImpl  - jdbc::get_connection with 
+	 - url: jdbc:sybase:Tds:172.16.41.23:4112/Banksys?IS_CLOSED_TEST=select 1 
+	 - urs: FEeDdCdFfB 
+	 - password: Sdnadmin1* 
+	 - ibs_usr: SSGUsrCredentials(entidadcodpar=1057, entidadpasswpar=PSW CENSYS, paiscod=54, bcocod=301, succod=1, tipdoc=88, usrident=2000001, tercod=17683, origpaiscod=54, origbcocod=301, origsuccod=1, concepto=H2H, tipoPrint=0)
+2021-09-13 15:02:49,258 TRACE [main] s.p.i.c.j.c.IBSConnection  - building ibs_connection with SSGUsrCredentials(entidadcodpar=1057, entidadpasswpar=PSW CENSYS, paiscod=54, bcocod=301, succod=1, tipdoc=88, usrident=2000001, tercod=17683, origpaiscod=54, origbcocod=301, origsuccod=1, concepto=H2H, tipoPrint=0)
+2021-09-13 15:02:49,259 DEBUG [main] s.p.i.c.j.c.IBSConnection  -  @TODO call(ssg_check_login_usr) with SSGUsrCredentials(entidadcodpar=1057, entidadpasswpar=PSW CENSYS, paiscod=54, bcocod=301, succod=1, tipdoc=88, usrident=2000001, tercod=17683, origpaiscod=54, origbcocod=301, origsuccod=1, concepto=H2H, tipoPrint=0)
+2021-09-13 15:02:49,260 DEBUG [main] s.p.i.s.j.p.SSGCheckLoginUsr  - Compiled stored procedure. Call string is [{call ssg_check_login_usr(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)}]
+2021-09-13 15:02:49,260 DEBUG [main] s.p.i.s.j.p.SSGCheckLoginUsr  - RdbmsOperation with SQL [ssg_check_login_usr] compiled
+2021-09-13 15:02:49,278 TRACE [main] s.p.i.c.j.c.i.SSGAuthenticatedConnectionPoolImpl  - jdbc::get_connection with 
+	 - url: jdbc:sybase:Tds:172.16.41.23:4112/Banksys?IS_CLOSED_TEST=select 1 
+	 - urs: FEeDdCdFfB 
+	 - password: Sdnadmin1* 
+	 - ibs_usr: SSGUsrCredentials(entidadcodpar=1057, entidadpasswpar=PSW CENSYS, paiscod=54, bcocod=301, succod=1, tipdoc=88, usrident=2000001, tercod=17684, origpaiscod=54, origbcocod=301, origsuccod=1, concepto=H2H, tipoPrint=0)
+2021-09-13 15:02:49,326 TRACE [main] s.p.i.c.j.c.IBSConnection  - building ibs_connection with SSGUsrCredentials(entidadcodpar=1057, entidadpasswpar=PSW CENSYS, paiscod=54, bcocod=301, succod=1, tipdoc=88, usrident=2000001, tercod=17684, origpaiscod=54, origbcocod=301, origsuccod=1, concepto=H2H, tipoPrint=0)
+2021-09-13 15:02:49,327 DEBUG [main] s.p.i.c.j.c.IBSConnection  -  @TODO call(ssg_check_login_usr) with SSGUsrCredentials(entidadcodpar=1057, entidadpasswpar=PSW CENSYS, paiscod=54, bcocod=301, succod=1, tipdoc=88, usrident=2000001, tercod=17684, origpaiscod=54, origbcocod=301, origsuccod=1, concepto=H2H, tipoPrint=0)
+2021-09-13 15:02:49,328 DEBUG [main] s.p.i.s.j.p.SSGCheckLoginUsr  - Compiled stored procedure. Call string is [{call ssg_check_login_usr(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)}]
+2021-09-13 15:02:49,329 DEBUG [main] s.p.i.s.j.p.SSGCheckLoginUsr  - RdbmsOperation with SQL [ssg_check_login_usr] compiled
+2021-09-13 15:02:49,355 TRACE [main] s.p.i.d.c.i.IBSDDClientImpl  - pool created.
+2021-09-13 15:02:49,372 DEBUG [main] s.p.i.d.j.p.ReversarDebitoRealizadoStoredProcedure  - Compiled stored procedure. Call string is [{call sgl_ebfReversa_DebAut(?, ?, ?, ?)}]
+2021-09-13 15:02:49,373 DEBUG [main] s.p.i.d.j.p.ReversarDebitoRealizadoStoredProcedure  - RdbmsOperation with SQL [sgl_ebfReversa_DebAut] compiled
+2021-09-13 15:02:49,375 DEBUG [main] s.p.i.c.j.c.i.SSGAuthenticatedConnectionPoolImpl  -  IBS_POOL | used_connections: 0, free_connections: 5

@@ -1,0 +1,21 @@
+
+ibs.host = 172.16.41.23
+ibs.port = 4112
+ibs.database = Banksys
+ibs.username = perezr
+ibs.password = apolo11
+
+ibs.entidadcodpar = 1057
+ibs.entidadpasswpar = PWS CENSYS
+ibs.paiscod = 54
+ibs.bcocod = 301
+ibs.succod = 1
+ibs.tipdoc = 88
+ibs.usrident = 2000001
+ibs.tercod = 17680
+ibs.origpaiscod = 54
+ibs.origbcocod = 301
+ibs.origsuccod = 1
+ibs.concepto = H2H
+ibs.tipoPrint = 0
+
