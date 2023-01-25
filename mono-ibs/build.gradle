@@ -9,6 +9,11 @@ repositories {
     mavenCentral()
 }
 
+ext {
+    springVersion = "5.3.25"
+    springDataVersion = "2022.0.1"
+}
+
 
 configurations {
     compileOnly {
@@ -16,10 +21,19 @@ configurations {
     }
 }
 
+
 dependencies {
     implementation fileTree(dir: 'libs', include: '*.jar')
+    implementation fileTree(dir: 'libs/table', include: '*.jar')
+
     compileOnly 'org.projectlombok:lombok:1.18.24'
     annotationProcessor 'org.projectlombok:lombok:1.18.24'
+
+  //  implementation platform("org.springframework.data:spring-data-bom:${springDataVersion}")
+  //  implementation("org.springframework.data:spring-data-commons")
+  //  implementation("org.springframework.data:spring-data-jdbc")
+    implementation("org.springframework.boot:spring-boot-starter-jdbc:2.7.8")
+
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
 }
