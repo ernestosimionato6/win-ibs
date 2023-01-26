@@ -39,7 +39,7 @@ public class IBSObtenerCuentasStoredProcedureImpl extends StoredProcedure implem
 
         declareParameter(new SqlParameter(IBSConstants.NRODOC, Types.VARCHAR));
         declareParameter(new SqlParameter(IBSConstants.NRODOC__REPRESENTANTE, Types.VARCHAR));
-        declareParameter(new SqlOutParameter(IBSConstants.STATUS, Types.INTEGER));
+       // declareParameter(new SqlOutParameter(IBSConstants.STATUS, Types.INTEGER));
         compile();
         out.println("[windcoin-ibs] " + PROCEDURE_NAME + " compiled.");
     }
