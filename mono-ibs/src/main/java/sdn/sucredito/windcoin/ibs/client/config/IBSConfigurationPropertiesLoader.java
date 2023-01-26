@@ -14,8 +14,8 @@ public class IBSConfigurationPropertiesLoader {
 
     private static final String PASSWORD = "ibs.password";
 
-    private static final String INITIAL_POOL_SIZE = "ibs.initial_pool_size";
-    private static final String MAX_POOL_SIZE = "ibs.max_pool_size";
+    private static final String INITIAL_POOLSIZE = "ibs.initial_poolsize";
+    private static final String MAX_POOLSIZE = "ibs.max_poolsize";
     private static final String MAX_TIMEOUT = "ibs.max_timeout";
 
     public static Properties load(String filePath) {
@@ -39,8 +39,8 @@ public class IBSConfigurationPropertiesLoader {
                 .connectionUrl(props.getProperty(CONNECTION_URL))
                 .username(props.getProperty(USERNAME))
                 .password(props.getProperty(PASSWORD))
-                .initialPoolSize(new Integer(props.getProperty(INITIAL_POOL_SIZE)))
-                .maxPoolSize(new Integer(props.getProperty(MAX_POOL_SIZE)))
+                .initialPoolSize(new Integer(props.getProperty(INITIAL_POOLSIZE)))
+                .maxPoolSize(new Integer(props.getProperty(MAX_POOLSIZE)))
                 .maxTimeout(new Integer(props.getProperty(MAX_TIMEOUT)))
                 .build();
     }
