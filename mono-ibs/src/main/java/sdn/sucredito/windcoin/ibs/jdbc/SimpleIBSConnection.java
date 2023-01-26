@@ -17,7 +17,7 @@ public class SimpleIBSConnection implements IBSConnection {
     public Connection sqlConnection;
 
     public SimpleIBSConnection(Connection sqlConnection) throws SQLException {
-        log.trace("building ibs_connection with {}",  sqlConnection.getClientInfo());
+        log.trace("building ibs_connection with {} {}",  sqlConnection.hashCode(), sqlConnection.getMetaData().getURL());
         this.sqlConnection = sqlConnection;
     }
 
@@ -31,10 +31,8 @@ public class SimpleIBSConnection implements IBSConnection {
     }
 
     public void close() throws SQLException {
-        // @TODO Skipped real closed.
-        System.out.println("@TODO skipped real sqlconnection.close()");
-        return;
-        // sqlConnection.close();
+        log.trace("stoping ibs_connection with {} {}",  sqlConnection.hashCode(), sqlConnection.getMetaData().getURL());
+        sqlConnection.close();
     }
 
 
