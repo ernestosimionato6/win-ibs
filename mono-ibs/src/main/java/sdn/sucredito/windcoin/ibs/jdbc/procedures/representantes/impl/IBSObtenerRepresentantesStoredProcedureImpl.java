@@ -38,10 +38,10 @@ public class IBSObtenerRepresentantesStoredProcedureImpl extends StoredProcedure
         setSql(PROCEDURE_NAME);
 
         declareParameter(new SqlParameter(IBSConstants.NRODOC, Types.VARCHAR));
-        declareParameter(new SqlParameter(IBSConstants.ES_ENTIDAD_FINANCIERA, Types.CHAR));
-        declareParameter(new SqlParameter(IBSConstants.CHECK_ONLY, Types.CHAR));
-        declareParameter(new SqlParameter(IBSConstants.CHECK_NRODOC__REPRESENTANTE, Types.VARCHAR));
-        declareParameter(new SqlOutParameter(IBSConstants.STATUS, Types.INTEGER));
+       // declareParameter(new SqlParameter(IBSConstants.ES_ENTIDAD_FINANCIERA, Types.CHAR));
+       // declareParameter(new SqlParameter(IBSConstants.CHECK_ONLY, Types.CHAR));
+       // declareParameter(new SqlParameter(IBSConstants.CHECK_NRODOC__REPRESENTANTE, Types.VARCHAR));
+       // declareParameter(new SqlOutParameter(IBSConstants.STATUS, Types.INTEGER));
         compile();
         out.println("[windcoin-ibs] " + PROCEDURE_NAME + " compiled.");
 
@@ -52,7 +52,7 @@ public class IBSObtenerRepresentantesStoredProcedureImpl extends StoredProcedure
 
         Map<String, Object> in = new HashMap<String, Object>();
         in.put(IBSConstants.NRODOC, nrodoc);
-        in.put(IBSConstants.ES_ENTIDAD_FINANCIERA, esEntidadFinanciera);
+       // in.put(IBSConstants.ES_ENTIDAD_FINANCIERA, esEntidadFinanciera);
 
         Map<String, Object> out = super.execute(in);
         ArrayList<LinkedCaseInsensitiveMap> resultSet = (ArrayList<LinkedCaseInsensitiveMap>)out.get("#result-set-1");
