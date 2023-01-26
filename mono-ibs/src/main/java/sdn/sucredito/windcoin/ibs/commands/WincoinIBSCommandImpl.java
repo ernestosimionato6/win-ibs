@@ -8,6 +8,8 @@ import picocli.CommandLine.Model.CommandSpec;
 import picocli.CommandLine.Parameters;
 import picocli.CommandLine.ParameterException;
 import picocli.CommandLine.Spec;
+import sdn.sucredito.wincoin.model.Cuit;
+import sdn.sucredito.wincoin.model.entidad.DatosEntidad;
 import sdn.sucredito.windcoin.ibs.client.WincoinClientIBS;
 import sdn.sucredito.windcoin.ibs.client.config.IBSConfiguration;
 import sdn.sucredito.windcoin.ibs.client.config.IBSConfigurationImpl;
@@ -17,6 +19,7 @@ import sdn.sucredito.windcoin.ibs.jdbc.IBSBasicConnectionPool;
 import sdn.sucredito.windcoin.ibs.jdbc.IBSConnectionPool;
 
 import java.sql.SQLException;
+import java.util.Optional;
 
 import static sdn.sucredito.windcoin.ibs.client.config.IBSConfigurationPropertiesLoader.loadIBSProperties;
 
@@ -25,7 +28,7 @@ interface WincoinIBSCommand {
 
         void obtenerDatosEntidad(
                 String cuitEntidad
-        );
+        ) throws Exception;
 }
 
 @Data
@@ -62,8 +65,10 @@ public class WincoinIBSCommandImpl implements WincoinIBSCommand, Runnable {
                         paramLabel = "<cuit_entidad>",
                         description = "CUIT de la entidad (persona juridica)"
                 ) String cuitEntidad
-        ) {
-                System.out.println("[obtener_datos_entidad] of " + cuitEntidad);
+        ) throws Exception {
+                System.out.println("  [ obtener_datos_entidad  ] of " + cuitEntidad);
+                Optional<DatosEntidad> datosEntidad =  client.obtenerDatosEntidad(Cuit.of(cuitEntidad));
+                System.out.println(" [ entidad-" + cuitEntidad + " ] "  + datosEntidad);
         }
 
         @Override
