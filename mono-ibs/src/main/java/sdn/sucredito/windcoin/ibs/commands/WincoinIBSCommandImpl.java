@@ -10,6 +10,7 @@ import picocli.CommandLine.ParameterException;
 import picocli.CommandLine.Spec;
 import sdn.sucredito.wincoin.model.Cuit;
 import sdn.sucredito.wincoin.model.entidad.DatosEntidad;
+import sdn.sucredito.wincoin.model.entidad.Representante;
 import sdn.sucredito.windcoin.ibs.client.WincoinClientIBS;
 import sdn.sucredito.windcoin.ibs.client.config.IBSConfiguration;
 import sdn.sucredito.windcoin.ibs.client.config.IBSConfigurationImpl;
@@ -19,6 +20,7 @@ import sdn.sucredito.windcoin.ibs.jdbc.IBSBasicConnectionPool;
 import sdn.sucredito.windcoin.ibs.jdbc.IBSConnectionPool;
 
 import java.sql.SQLException;
+import java.util.List;
 import java.util.Optional;
 
 import static sdn.sucredito.windcoin.ibs.client.config.IBSConfigurationPropertiesLoader.loadIBSProperties;
@@ -28,6 +30,30 @@ interface WincoinIBSCommand {
 
         void obtenerDatosEntidad(
                 String cuitEntidad
+        ) throws Exception;
+
+        @Command(
+                name = "obtener-representantes",
+                description = "Muestra los representantes de una persona juridica."
+        )
+        void obtenerRepresentantes(
+                @Parameters(
+                        arity = "1",
+                        paramLabel = "<cuit_entidad>",
+                        description = "CUIT de la entidad (persona juridica)"
+                ) String cuitEntidad
+        ) throws Exception;
+
+        @Command(
+                name = "obtener-apoderados",
+                description = "Muestra los apoderados de una persona juridica."
+        )
+        void obtenerApoderados(
+                @Parameters(
+                        arity = "1",
+                        paramLabel = "<cuit_entidad>",
+                        description = "CUIT de la entidad (persona juridica)"
+                ) String cuitEntidad
         ) throws Exception;
 }
 
@@ -70,6 +96,45 @@ public class WincoinIBSCommandImpl implements WincoinIBSCommand, Runnable {
                 Optional<DatosEntidad> datosEntidad =  client.obtenerDatosEntidad(Cuit.of(cuitEntidad));
                 System.out.println(" [ entidad-" + cuitEntidad + " ] "  + datosEntidad);
         }
+
+
+
+        @Override
+        @Command(
+                name = "obtener-representantes",
+                description = "Muestra los representantes de una persona juridica."
+        )
+        public void obtenerRepresentantes(
+                @Parameters(
+                        arity = "1",
+                        paramLabel = "<cuit_entidad>",
+                        description = "CUIT de la entidad (persona juridica)"
+                ) String cuitEntidad
+        ) throws Exception {
+                System.out.println("  [ obtener_representantes  ] of " + cuitEntidad);
+                List<Representante> representantes =  client.obtenerRepresentantes(Cuit.of(cuitEntidad));
+                System.out.println(" [ entidad-" + cuitEntidad + " ] "  + representantes);
+        }
+
+
+        @Override
+        @Command(
+                name = "obtener-apoderados",
+                description = "Muestra los apoderados de una persona juridica."
+        )
+        public void obtenerApoderados(
+                @Parameters(
+                        arity = "1",
+                        paramLabel = "<cuit_entidad>",
+                        description = "CUIT de la entidad (persona juridica)"
+                ) String cuitEntidad
+        ) throws Exception {
+                System.out.println("  [ obtener_apoderados  ] of " + cuitEntidad);
+                List<Representante> apoderados =  client.obtenerApoderados(Cuit.of(cuitEntidad));
+                System.out.println(" [ entidad-" + cuitEntidad + " ] "  + apoderados);
+        }
+
+
 
         @Override
         public void run() {
