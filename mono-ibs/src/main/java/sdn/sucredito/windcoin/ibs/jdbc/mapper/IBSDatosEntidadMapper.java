@@ -11,7 +11,6 @@ import sdn.sucredito.wincoin.model.persona.contacto.Email;
 import sdn.sucredito.windcoin.ibs.jdbc.model.IBSDatosEntidad;
 
 import java.util.Optional;
-import static java.util.Optional.of;
 
 import static sdn.sucredito.windcoin.ibs.jdbc.procedures.IBSConstants.*;
 
@@ -25,23 +24,23 @@ public class IBSDatosEntidadMapper {
 
     public IBSDatosEntidad map(LinkedCaseInsensitiveMap rs) {
        return IBSDatosEntidad.builder()
-               .actividad(of(rs.get(ACTIVIDAD)).orElse("").toString())
-               .calle(of(rs.get(CALLE)).orElse("").toString())
-               .calleNumero(of(rs.get(CALLE_NUMERO)).orElse("").toString())
-               .codigoEntidadBcra(of(rs.get(CODIGO_ENTIDAD_BCRA)).orElse("").toString())
-               .codigoPostal(of(rs.get(CODIGO_POSTAL)).orElse("") .toString())
-               .cuitEntidad(of(rs.get(CUIT_ENTIDAD) ).orElse("") .toString())
-               .departamento(of(rs.get(DEPARTAMENTO)).orElse("")  .toString())
-               .email(of(rs.get(EMAIL) ).orElse("")  .toString())
-               .esPep(of(rs.get(ES_PEP) ).orElse("") .toString())
-               .fechaInscripcionIgj(of(rs.get(FECHA_INSCRIPCION_IGJ) ).orElse("")  .toString())
-               .formaJuridica(of(rs.get(FORMA_JURIDICA) ).orElse("")  .toString())
-               .idProvinciaBcra(of(rs.get(ID_PROVINCIA_BCRA) ).orElse("")  .toString())
-               .idTipoCliente(of(rs.get(ID_TIPO_CLIENTE) ).orElse("")  .toString())
-               .localidad(of(rs.get(LOCALIDAD) ).orElse("")  .toString())
-               .numeroInscripcionRegistralIgj(of(rs.get(NUMERO_INSCRIPCION_REGISTRAL_IGJ) ).orElse("")  .toString())
-               .piso(of(rs.get(PISO) ).orElse("").toString())
-               .razonSocial(of(rs.get(RAZON_SOCIAL)).orElse("").toString())
+               .actividad(rs.getOrDefault(ACTIVIDAD, "").toString())
+               .calle(rs.getOrDefault(CALLE, "").toString())
+               .calleNumero(rs.getOrDefault(CALLE_NUMERO, "").toString())
+               .codigoEntidadBcra(rs.getOrDefault(CODIGO_ENTIDAD_BCRA, "").toString())
+               .codigoPostal(rs.getOrDefault(CODIGO_POSTAL, "").toString())
+               .cuitEntidad(rs.getOrDefault(CUIT_ENTIDAD, "").toString())
+               .departamento(rs.getOrDefault(DEPARTAMENTO, "").toString())
+               .email(rs.getOrDefault(EMAIL, "").toString())
+               .esPep(rs.getOrDefault(ES_PEP, "").toString())
+               .fechaInscripcionIgj(rs.getOrDefault(FECHA_INSCRIPCION_IGJ, "").toString())
+               .formaJuridica(rs.getOrDefault(FORMA_JURIDICA, "").toString())
+               .idProvinciaBcra(rs.getOrDefault(ID_PROVINCIA_BCRA, "").toString())
+               .idTipoCliente(rs.getOrDefault(ID_TIPO_CLIENTE, "").toString())
+               .localidad(rs.getOrDefault(LOCALIDAD, "").toString())
+               .numeroInscripcionRegistralIgj(rs.getOrDefault(NUMERO_INSCRIPCION_REGISTRAL_IGJ, "").toString())
+               .piso(rs.getOrDefault(PISO, "").toString())
+               .razonSocial(rs.getOrDefault(RAZON_SOCIAL, "").toString())
                .build();
     }
 
