@@ -102,7 +102,7 @@ public class IBSBasicConnectionPool implements IBSConnectionPool {
 
     private static Connection createConnection(String url, String user, String password) throws SQLException {
         Connection con =  DriverManager.getConnection(url, user, password);
-        out.println(" [ ibs-connection-pool ] create_connection of " + url + "   " + user + "   " + password + " " + con.getClientInfo());
+        out.println(" [ ibs-connection-pool ] create_connection of " + url + "   " + user + "   " + password + " " + con.hashCode() + "  " + con.getMetaData());
         return con;
     }
 
@@ -135,7 +135,7 @@ public class IBSBasicConnectionPool implements IBSConnectionPool {
     public void shutdown() throws SQLException {
         usedConnections.forEach(this::releaseConnection);
         for (Connection c : connectionPool) {
-            out.println("[ ibs-connection-pool ] closing_connection of " + c.getClientInfo());
+            out.println("[ ibs-connection-pool ] closing_connection of " + c.hashCode() + "   "  + c.getMetaData());
             c.close();
         }
         connectionPool.clear();
