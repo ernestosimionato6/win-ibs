@@ -51,7 +51,7 @@ public class IBSObtenerDatosEntidadStoredProcedureImpl extends StoredProcedure
 
         Map<String, Object> in = new HashMap<String, Object>();
         in.put(IBSConstants.NRODOC, nrodoc);
-        in.put(IBSConstants.CHECK_ONLY, 'N');
+      //  in.put(IBSConstants.CHECK_ONLY, 'N');
 
         Map<String, Object> out = super.execute(in);
         ArrayList<LinkedCaseInsensitiveMap> resultSet = (ArrayList<LinkedCaseInsensitiveMap>)out.get("#result-set-1");
