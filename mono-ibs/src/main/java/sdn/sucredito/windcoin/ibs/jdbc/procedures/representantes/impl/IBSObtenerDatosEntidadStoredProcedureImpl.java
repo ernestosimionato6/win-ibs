@@ -55,7 +55,7 @@ public class IBSObtenerDatosEntidadStoredProcedureImpl extends StoredProcedure
 
         Map<String, Object> out = super.execute(in);
         ArrayList<LinkedCaseInsensitiveMap> resultSet = (ArrayList<LinkedCaseInsensitiveMap>)out.get("#result-set-1");
-        System.out.println("[windcoin-ibs] " + PROCEDURE_NAME + " resulset is: ");
+        System.out.println("[windcoin-ibs] " + PROCEDURE_NAME + " resulset is: " + out.keySet() + " " + out);
         System.out.println(TextTable.render(
                 "Resulset #1",
                 IBSJDBCUtil.toMap(resultSet.get(0))
