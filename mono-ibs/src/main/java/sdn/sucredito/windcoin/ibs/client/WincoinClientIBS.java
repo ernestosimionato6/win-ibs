@@ -5,6 +5,7 @@ import sdn.sucredito.wincoin.model.cuenta.Cuenta;
 import sdn.sucredito.wincoin.model.entidad.DatosEntidad;
 import sdn.sucredito.wincoin.model.entidad.Representante;
 
+import java.sql.SQLException;
 import java.util.List;
 import java.util.Optional;
 
@@ -15,4 +16,5 @@ public interface WincoinClientIBS {
     List<Representante> obtenerRepresentantes(Cuit cuitEntidad) throws Exception;
     Optional<DatosEntidad> obtenerDatosEntidad( Cuit cuitEntidad ) throws Exception;
 
+    void shutdown() throws SQLException;
 }

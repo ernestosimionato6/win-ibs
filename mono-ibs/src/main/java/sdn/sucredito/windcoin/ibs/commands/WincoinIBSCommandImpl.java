@@ -94,5 +94,6 @@ public class WincoinIBSCommandImpl implements WincoinIBSCommand, Runnable {
                } else {
                        cmd.execute(args);
                }
+               client.shutdown();
         }
 }

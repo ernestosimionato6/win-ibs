@@ -14,6 +14,7 @@ import sdn.sucredito.windcoin.ibs.data.repositories.entidades.impl.IBSCuentasRep
 import sdn.sucredito.windcoin.ibs.data.repositories.entidades.impl.IBSEntidadesRepositoryImpl;
 import sdn.sucredito.windcoin.ibs.jdbc.IBSConnectionPool;
 
+import java.sql.SQLException;
 import java.util.List;
 import java.util.Optional;
 
@@ -67,5 +68,10 @@ implements WincoinClientIBS {
                 cuitEntidad,
                 cuitRepresentante
         );
+    }
+
+    @Override
+    public void shutdown() throws SQLException {
+        pool.shutdown();
     }
 }
