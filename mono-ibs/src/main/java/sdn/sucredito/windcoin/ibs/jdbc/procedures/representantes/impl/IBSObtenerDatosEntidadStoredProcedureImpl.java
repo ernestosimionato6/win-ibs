@@ -37,7 +37,7 @@ public class IBSObtenerDatosEntidadStoredProcedureImpl extends StoredProcedure
         setSql(PROCEDURE_NAME);
 
         declareParameter(new SqlParameter(NRODOC, Types.VARCHAR));
-        declareParameter(new SqlParameter(CHECK_ONLY, Types.CHAR));
+      //  declareParameter(new SqlParameter(CHECK_ONLY, Types.CHAR));
         declareParameter(new SqlOutParameter(STATUS, Types.INTEGER));
         compile();
         out.println("[windcoin-ibs] " + PROCEDURE_NAME + " compiled.");
