@@ -1,6 +1,5 @@
 package sdn.sucredito.windcoin.ibs.jdbc.procedures.representantes.impl;
 
-import org.springframework.jdbc.core.SqlOutParameter;
 import org.springframework.jdbc.core.SqlParameter;
 import org.springframework.jdbc.object.StoredProcedure;
 import org.springframework.util.LinkedCaseInsensitiveMap;
@@ -10,14 +9,14 @@ import sdn.sucredito.windcoin.ibs.jdbc.IBSJDBCUtil;
 import sdn.sucredito.windcoin.ibs.jdbc.mapper.IBSDatosEntidadMapper;
 import sdn.sucredito.windcoin.ibs.jdbc.model.IBSCuenta;
 import sdn.sucredito.windcoin.ibs.jdbc.model.IBSDatosEntidad;
-import sdn.sucredito.windcoin.ibs.jdbc.procedures.cuentas.impl.IBSConstants;
+import sdn.sucredito.windcoin.ibs.jdbc.procedures.IBSConstants;
 
 import javax.sql.DataSource;
 import java.sql.Types;
 import java.util.*;
 
 import static java.lang.System.out;
-import static sdn.sucredito.windcoin.ibs.jdbc.procedures.cuentas.impl.IBSConstants.*;
+import static sdn.sucredito.windcoin.ibs.jdbc.procedures.IBSConstants.*;
 
 
 public class IBSObtenerDatosEntidadStoredProcedureImpl extends StoredProcedure

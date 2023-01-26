@@ -9,6 +9,7 @@ import sdn.sucredito.windcoin.ibs.jdbc.IBSJDBCTemplate;
 import sdn.sucredito.windcoin.ibs.jdbc.IBSJDBCUtil;
 import sdn.sucredito.windcoin.ibs.jdbc.mapper.IBSCuentaMapper;
 import sdn.sucredito.windcoin.ibs.jdbc.model.IBSCuenta;
+import sdn.sucredito.windcoin.ibs.jdbc.procedures.IBSConstants;
 import sdn.sucredito.windcoin.ibs.jdbc.procedures.cuentas.IBSObtenerCuentasStoredProcedure;
 
 import javax.sql.DataSource;
@@ -54,7 +55,7 @@ public class IBSObtenerCuentasStoredProcedureImpl extends StoredProcedure implem
 
         Map<String, Object> out = super.execute(in);
         ArrayList<LinkedCaseInsensitiveMap> resultSet = (ArrayList<LinkedCaseInsensitiveMap>)out.get("#result-set-1");
-        System.out.println("[windcoin-ibs] " + PROCEDURE_NAME + " resulset is: ");
+        System.out.println("[windcoin-ibs] " + PROCEDURE_NAME + " resulset is: " + out.keySet() + " " + out);
         System.out.println(TextTable.render(
                 "Resulset #1",
                 IBSJDBCUtil.toMap(resultSet.get(0))

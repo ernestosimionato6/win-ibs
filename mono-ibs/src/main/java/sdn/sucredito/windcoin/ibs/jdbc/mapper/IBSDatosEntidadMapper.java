@@ -9,9 +9,8 @@ import sdn.sucredito.wincoin.model.persona.address.Localidad;
 import sdn.sucredito.wincoin.model.persona.address.Provincia;
 import sdn.sucredito.wincoin.model.persona.contacto.Email;
 import sdn.sucredito.windcoin.ibs.jdbc.model.IBSDatosEntidad;
-import sdn.sucredito.windcoin.ibs.jdbc.procedures.cuentas.impl.IBSConstants;
 
-import static sdn.sucredito.windcoin.ibs.jdbc.procedures.cuentas.impl.IBSConstants.*;
+import static sdn.sucredito.windcoin.ibs.jdbc.procedures.IBSConstants.*;
 
 
 public class IBSDatosEntidadMapper {

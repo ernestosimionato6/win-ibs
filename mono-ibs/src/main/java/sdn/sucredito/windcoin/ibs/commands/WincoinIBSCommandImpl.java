@@ -9,6 +9,7 @@ import picocli.CommandLine.Parameters;
 import picocli.CommandLine.ParameterException;
 import picocli.CommandLine.Spec;
 import sdn.sucredito.wincoin.model.Cuit;
+import sdn.sucredito.wincoin.model.cuenta.Cuenta;
 import sdn.sucredito.wincoin.model.entidad.DatosEntidad;
 import sdn.sucredito.wincoin.model.entidad.Representante;
 import sdn.sucredito.windcoin.ibs.client.WincoinClientIBS;
@@ -54,6 +55,23 @@ interface WincoinIBSCommand {
                         paramLabel = "<cuit_entidad>",
                         description = "CUIT de la entidad (persona juridica)"
                 ) String cuitEntidad
+        ) throws Exception;
+
+        @Command(
+                name = "obtener-cuentas",
+                description = "Muestra las cuentas de una persona juridica."
+        )
+        void obtenerCuentas(
+                @Parameters(
+                        arity = "1",
+                        paramLabel = "<cuit_entidad>",
+                        description = "CUIT de la entidad (persona juridica)"
+                ) String cuitEntidad,
+                @Parameters(
+                        arity = "1",
+                        paramLabel = "<cuit_representante>",
+                        description = "CUIT de un representante de la entidad (persona juridica)"
+                ) String cuitRepresentante
         ) throws Exception;
 }
 
@@ -132,6 +150,28 @@ public class WincoinIBSCommandImpl implements WincoinIBSCommand, Runnable {
                 System.out.println("  [ obtener_apoderados  ] of " + cuitEntidad);
                 List<Representante> apoderados =  client.obtenerApoderados(Cuit.of(cuitEntidad));
                 System.out.println(" [ entidad-" + cuitEntidad + " ] "  + apoderados);
+        }
+
+        @Override
+        @Command(
+                name = "obtener-cuentas",
+                description = "Muestra las cuentas de una persona juridica."
+        )
+        public void obtenerCuentas(
+                @Parameters(
+                        arity = "1",
+                        paramLabel = "<cuit_entidad>",
+                        description = "CUIT de la entidad (persona juridica)"
+                ) String cuitEntidad,
+                @Parameters(
+                        arity = "1",
+                        paramLabel = "<cuit_representante>",
+                        description = "CUIT de un representante de la entidad (persona juridica)"
+                ) String cuitRepresentante
+        ) throws Exception {
+                System.out.println("  [ obtener_cuentas  ] of cuit_entidad: " + cuitEntidad + ", cuit_representante: " + cuitRepresentante);
+                List<Cuenta> cuentas =  client.obtenerCuentas(Cuit.of(cuitEntidad), Cuit.of(cuitRepresentante));
+                System.out.println(" [ entidad-" + cuitEntidad + " | representante-" + cuitRepresentante + " ] "  + cuentas);
         }
 
 

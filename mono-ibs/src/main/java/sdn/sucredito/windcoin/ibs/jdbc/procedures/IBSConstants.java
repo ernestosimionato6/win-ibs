@@ -1,4 +1,4 @@
-package sdn.sucredito.windcoin.ibs.jdbc.procedures.cuentas.impl;
+package sdn.sucredito.windcoin.ibs.jdbc.procedures;
 
 public class IBSConstants {
 

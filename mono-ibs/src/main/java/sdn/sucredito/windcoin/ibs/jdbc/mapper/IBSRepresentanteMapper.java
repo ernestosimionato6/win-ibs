@@ -7,13 +7,11 @@ import sdn.sucredito.wincoin.model.persona.Genero;
 import sdn.sucredito.wincoin.model.persona.address.*;
 import sdn.sucredito.wincoin.model.persona.contacto.Email;
 import sdn.sucredito.wincoin.model.persona.contacto.Telefono;
-import sdn.sucredito.windcoin.ibs.jdbc.model.IBSDatosEntidad;
 import sdn.sucredito.windcoin.ibs.jdbc.model.IBSRepresentante;
-import sdn.sucredito.windcoin.ibs.jdbc.procedures.cuentas.impl.IBSConstants;
 
 import java.util.Map;
 
-import static sdn.sucredito.windcoin.ibs.jdbc.procedures.cuentas.impl.IBSConstants.*;
+import static sdn.sucredito.windcoin.ibs.jdbc.procedures.IBSConstants.*;
 
 public class IBSRepresentanteMapper {
 

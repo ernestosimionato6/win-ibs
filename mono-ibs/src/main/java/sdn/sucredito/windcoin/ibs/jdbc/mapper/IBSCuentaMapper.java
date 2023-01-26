@@ -6,12 +6,10 @@ import sdn.sucredito.wincoin.model.cuenta.CuentaPBF;
 import sdn.sucredito.wincoin.model.cuenta.CuentaTipo;
 import sdn.sucredito.wincoin.model.moneda.Moneda;
 import sdn.sucredito.windcoin.ibs.jdbc.model.IBSCuenta;
-import sdn.sucredito.windcoin.ibs.jdbc.procedures.cuentas.impl.IBSConstants;
 
-import java.time.LocalTime;
 import java.util.Map;
 
-import static sdn.sucredito.windcoin.ibs.jdbc.procedures.cuentas.impl.IBSConstants.*;
+import static sdn.sucredito.windcoin.ibs.jdbc.procedures.IBSConstants.*;
 
 public class IBSCuentaMapper {
     public static IBSCuentaMapper instance;

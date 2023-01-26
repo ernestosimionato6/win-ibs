@@ -1,6 +1,5 @@
 package sdn.sucredito.windcoin.ibs.jdbc.procedures.representantes.impl;
 
-import org.springframework.jdbc.core.SqlOutParameter;
 import org.springframework.jdbc.core.SqlParameter;
 import org.springframework.jdbc.object.StoredProcedure;
 import org.springframework.util.LinkedCaseInsensitiveMap;
@@ -9,7 +8,7 @@ import sdn.sucredito.windcoin.ibs.jdbc.IBSJDBCTemplate;
 import sdn.sucredito.windcoin.ibs.jdbc.IBSJDBCUtil;
 import sdn.sucredito.windcoin.ibs.jdbc.mapper.IBSRepresentanteMapper;
 import sdn.sucredito.windcoin.ibs.jdbc.model.IBSRepresentante;
-import sdn.sucredito.windcoin.ibs.jdbc.procedures.cuentas.impl.IBSConstants;
+import sdn.sucredito.windcoin.ibs.jdbc.procedures.IBSConstants;
 
 import javax.sql.DataSource;
 import java.sql.Types;
