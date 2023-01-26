@@ -20,10 +20,10 @@ public class IBSCuentaMapper {
     public IBSCuenta map(Map<String, Object> rs) {
 
         return IBSCuenta.builder()
-                .cuentaCbu(rs.get(CUENTA_CBU).toString())
-                .cuentaMoneda(rs.get(CUENTA_MONEDA).toString())
-                .cuentaPbf(rs.get(CUENTA_PBF).toString())
-                .cuentaTipo(rs.get(CUENTA_TIPO).toString())
+                .cuentaCbu(rs.getOrDefault(CUENTA_CBU, "").toString())
+                .cuentaMoneda(rs.getOrDefault(CUENTA_MONEDA, "").toString())
+                .cuentaPbf(rs.getOrDefault(CUENTA_PBF, "").toString())
+                .cuentaTipo(rs.getOrDefault(CUENTA_TIPO, "").toString())
                 .build();
     }
 
